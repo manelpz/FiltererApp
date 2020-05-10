@@ -27,6 +27,7 @@
                                 <rect key="frame" x="138" y="608" width="139" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Filtered Image"/>
+                                <state key="selected" title="Show Before Image"/>
                                 <connections>
                                     <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbA-Ps-X25"/>
                                 </connections>
