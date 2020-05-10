@@ -17,10 +17,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func onImageToggle(_ sender: UIButton) {
-        imageView.image = filteredImage
-        
-        
+        if imageToggle.isSelected{
+            let image = UIImage(named: "sample")
+            imageView.image = image
+            imageToggle.isSelected = false
+        }else{
+            imageView.image = filteredImage
+            imageToggle.isSelected = true
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
