@@ -10,10 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var filteredImage: UIImage?
+    
+    @IBOutlet var imageToggle: UIButton!
+    @IBOutlet var imageView: UIImageView!
+    
+    
+    @IBAction func onImageToggle(_ sender: UIButton) {
+        imageView.image = filteredImage
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        imageToggle.setTitle("Show Before Image", for: .selected)
         
         let image = UIImage(named: "sample")!
         
@@ -42,12 +53,8 @@ class ViewController: UIViewController {
             }
         }
     
-    let mewImage2 = myRGBA!.toUIImage()
-        
-        
-        
-        
-        
+    filteredImage = myRGBA!.toUIImage()
+       
         
     }
 
