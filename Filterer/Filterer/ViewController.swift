@@ -30,8 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //imageToggle.setTitle("Show Before Image", for: .selected)
-        
+
         let image = UIImage(named: "sample")!
         
         var myRGBA = RGBAImage(image: image)
