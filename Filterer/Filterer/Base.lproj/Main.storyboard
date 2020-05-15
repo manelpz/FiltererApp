@@ -18,22 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-Pq-1yd">
-                                <rect key="frame" x="138" y="608" width="139" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-Pq-1yd">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Kid-rw-WSG"/>
+                                </constraints>
                                 <state key="normal" title="Show Filtered Image"/>
-                                <state key="selected" title="Show Before Image"/>
                                 <connections>
                                     <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbA-Ps-X25"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cPP-Pq-1yd" secondAttribute="trailing" id="Bj5-8D-Ls9"/>
+                            <constraint firstAttribute="trailing" secondItem="cPP-Pq-1yd" secondAttribute="trailing" id="Cnf-I1-z6L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cPP-Pq-1yd" secondAttribute="bottom" id="G0Q-Vg-1yg"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="H4D-Za-Dbg"/>
+                            <constraint firstItem="LiR-ZS-27d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RMO-IV-wUE"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uvh-M3-fnR"/>
+                            <constraint firstAttribute="trailing" secondItem="LiR-ZS-27d" secondAttribute="trailing" id="aKk-lg-Ngg"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="LiR-ZS-27d" secondAttribute="bottom" id="bKD-WX-u8R"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="isW-M8-auN"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j7v-ZA-lwd"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="LiR-ZS-27d" secondAttribute="bottom" id="juT-ho-7MY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cPP-Pq-1yd" secondAttribute="bottom" id="nBS-iv-NzD"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="npu-Ku-JSs"/>
+                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="LiR-ZS-27d" secondAttribute="bottom" id="oXY-lW-eCE"/>
+                            <constraint firstItem="LiR-ZS-27d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rnB-PP-wDE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -43,6 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="20.758928571428569"/>
         </scene>
     </scenes>
     <resources>
