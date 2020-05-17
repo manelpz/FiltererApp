@@ -28,53 +28,51 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-Dg-GHX">
                                         <rect key="frame" x="0.0" y="15" width="414" height="42"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
-                                                <rect key="frame" x="103.5" y="8" width="103.5" height="30"/>
-                                                <state key="normal" title="Filter"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhl-s5-arA"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59X-NB-hBr">
-                                                <rect key="frame" x="207" y="6" width="103.5" height="30"/>
-                                                <state key="normal" title="Compare"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNH-WP-VOE"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-Q6-lwP">
-                                                <rect key="frame" x="310.5" y="8" width="103.5" height="30"/>
-                                                <state key="normal" title="Share"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AjU-QP-wHG"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-Pq-1yd">
-                                                <rect key="frame" x="0.0" y="6" width="103.5" height="30"/>
-                                                <state key="normal" title="New Photo"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbA-Ps-X25"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="center" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-lf-0aR">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-Pq-1yd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="42"/>
+                                                        <state key="normal" title="New Photo"/>
+                                                        <connections>
+                                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbA-Ps-X25"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
+                                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="42"/>
+                                                        <state key="normal" title="Filter"/>
+                                                        <connections>
+                                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhl-s5-arA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59X-NB-hBr">
+                                                        <rect key="frame" x="207" y="0.0" width="103.5" height="42"/>
+                                                        <state key="normal" title="Compare"/>
+                                                        <connections>
+                                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNH-WP-VOE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-Q6-lwP">
+                                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="42"/>
+                                                        <state key="normal" title="Share"/>
+                                                        <connections>
+                                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AjU-QP-wHG"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="1bf-Ra-lvS" firstAttribute="width" secondItem="59X-NB-hBr" secondAttribute="width" id="bfC-cJ-XDO"/>
+                                                    <constraint firstItem="59X-NB-hBr" firstAttribute="width" secondItem="iC3-Q6-lwP" secondAttribute="width" id="ji6-TT-Fl2"/>
+                                                    <constraint firstItem="cPP-Pq-1yd" firstAttribute="width" secondItem="1bf-Ra-lvS" secondAttribute="width" id="wP9-zt-9UU"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="59X-NB-hBr" firstAttribute="leading" secondItem="1bf-Ra-lvS" secondAttribute="trailing" id="4gS-WT-i0d"/>
-                                            <constraint firstItem="1bf-Ra-lvS" firstAttribute="top" secondItem="cI8-Dg-GHX" secondAttribute="top" constant="8" id="4x7-ad-bCn"/>
-                                            <constraint firstAttribute="bottom" secondItem="iC3-Q6-lwP" secondAttribute="bottom" constant="4" id="8aN-yz-Nj8"/>
-                                            <constraint firstItem="59X-NB-hBr" firstAttribute="width" secondItem="iC3-Q6-lwP" secondAttribute="width" id="HtV-n4-LCy"/>
-                                            <constraint firstAttribute="bottom" secondItem="1bf-Ra-lvS" secondAttribute="bottom" constant="4" id="Kls-aL-RPt"/>
-                                            <constraint firstAttribute="bottom" secondItem="59X-NB-hBr" secondAttribute="bottom" constant="6" id="Kzv-3O-1pT"/>
-                                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="width" secondItem="1bf-Ra-lvS" secondAttribute="width" id="SHM-B3-KrA"/>
-                                            <constraint firstItem="1bf-Ra-lvS" firstAttribute="leading" secondItem="cPP-Pq-1yd" secondAttribute="trailing" id="Wcl-j0-qXq"/>
-                                            <constraint firstItem="59X-NB-hBr" firstAttribute="top" secondItem="cI8-Dg-GHX" secondAttribute="top" constant="6" id="ZI5-rS-ahh"/>
-                                            <constraint firstItem="1bf-Ra-lvS" firstAttribute="width" secondItem="59X-NB-hBr" secondAttribute="width" id="bxk-3g-REd"/>
-                                            <constraint firstAttribute="trailing" secondItem="iC3-Q6-lwP" secondAttribute="trailing" id="fRb-fW-Iz1"/>
-                                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="leading" secondItem="cI8-Dg-GHX" secondAttribute="leading" id="hOV-pw-eRw"/>
-                                            <constraint firstItem="iC3-Q6-lwP" firstAttribute="leading" secondItem="59X-NB-hBr" secondAttribute="trailing" id="nfw-iP-CQb"/>
-                                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="cI8-Dg-GHX" secondAttribute="top" constant="6" id="nsA-wk-1sr"/>
-                                            <constraint firstItem="iC3-Q6-lwP" firstAttribute="top" secondItem="cI8-Dg-GHX" secondAttribute="top" constant="8" id="sLt-cg-hbu"/>
-                                            <constraint firstAttribute="bottom" secondItem="cPP-Pq-1yd" secondAttribute="bottom" constant="6" id="tPh-eV-UMM"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ihi-lf-0aR" secondAttribute="bottom" id="C2c-WU-vSt"/>
+                                            <constraint firstItem="Ihi-lf-0aR" firstAttribute="top" secondItem="cI8-Dg-GHX" secondAttribute="top" id="X53-5x-d3O"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ihi-lf-0aR" secondAttribute="trailing" id="Yit-9d-FOb"/>
+                                            <constraint firstItem="Ihi-lf-0aR" firstAttribute="leading" secondItem="cI8-Dg-GHX" secondAttribute="leading" id="r5F-Y6-Z6v"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -96,6 +94,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ddo-1W-hVE" secondAttribute="trailing" id="hDn-P6-q1a"/>
                             <constraint firstAttribute="bottom" secondItem="ddo-1W-hVE" secondAttribute="bottom" constant="41" id="q6M-FB-XqR"/>
                             <constraint firstItem="LiR-ZS-27d" firstAttribute="trailing" secondItem="ddo-1W-hVE" secondAttribute="trailing" id="vpn-Bm-AW9"/>
+                            <constraint firstItem="ddo-1W-hVE" firstAttribute="top" secondItem="LiR-ZS-27d" secondAttribute="bottom" id="xmo-GZ-6K1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
