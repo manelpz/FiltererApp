@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="761"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="771"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddo-1W-hVE">
-                                <rect key="frame" x="0.0" y="805" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-Dg-GHX">
                                         <rect key="frame" x="0.0" y="15" width="414" height="42"/>
@@ -90,11 +90,11 @@
                             <constraint firstItem="ddo-1W-hVE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0fZ-J3-E2p"/>
                             <constraint firstItem="LiR-ZS-27d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BZN-Si-DwT"/>
                             <constraint firstItem="LiR-ZS-27d" firstAttribute="leading" secondItem="ddo-1W-hVE" secondAttribute="leading" id="CGl-Ef-26w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LiR-ZS-27d" secondAttribute="bottom" constant="57" id="Mz6-d1-3mD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LiR-ZS-27d" secondAttribute="bottom" constant="47" id="Mz6-d1-3mD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ddo-1W-hVE" secondAttribute="trailing" id="hDn-P6-q1a"/>
-                            <constraint firstAttribute="bottom" secondItem="ddo-1W-hVE" secondAttribute="bottom" constant="41" id="q6M-FB-XqR"/>
+                            <constraint firstItem="ddo-1W-hVE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ixN-gc-Ucx"/>
                             <constraint firstItem="LiR-ZS-27d" firstAttribute="trailing" secondItem="ddo-1W-hVE" secondAttribute="trailing" id="vpn-Bm-AW9"/>
-                            <constraint firstItem="ddo-1W-hVE" firstAttribute="top" secondItem="LiR-ZS-27d" secondAttribute="bottom" id="xmo-GZ-6K1"/>
+                            <constraint firstItem="ddo-1W-hVE" firstAttribute="top" secondItem="LiR-ZS-27d" secondAttribute="bottom" constant="-3" id="xmo-GZ-6K1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
