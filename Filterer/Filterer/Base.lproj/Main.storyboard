@@ -35,14 +35,52 @@
                                             <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbA-Ps-X25"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59X-NB-hBr">
+                                        <rect key="frame" x="219" y="0.0" width="75" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="chh-wy-fiO"/>
+                                        </constraints>
+                                        <state key="normal" title="New Photo"/>
+                                        <connections>
+                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNH-WP-VOE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-Q6-lwP">
+                                        <rect key="frame" x="309" y="0.0" width="75" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="gVF-AH-bQ2"/>
+                                        </constraints>
+                                        <state key="normal" title="New Photo"/>
+                                        <connections>
+                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AjU-QP-wHG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
+                                        <rect key="frame" x="122" y="0.0" width="75" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qht-zE-MbV"/>
+                                        </constraints>
+                                        <state key="normal" title="New Photo"/>
+                                        <connections>
+                                            <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhl-s5-arA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="cPP-Pq-1yd" firstAttribute="leading" secondItem="ddo-1W-hVE" secondAttribute="leading" id="2FL-t7-lhQ"/>
+                                    <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="ddo-1W-hVE" secondAttribute="top" id="6Au-n3-5KQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="59X-NB-hBr" secondAttribute="bottom" id="CaF-UI-FPB"/>
                                     <constraint firstItem="cPP-Pq-1yd" firstAttribute="leading" secondItem="ddo-1W-hVE" secondAttribute="leading" constant="53" id="FOG-gs-XAD"/>
+                                    <constraint firstItem="1bf-Ra-lvS" firstAttribute="top" secondItem="ddo-1W-hVE" secondAttribute="top" id="HH5-AQ-56i"/>
+                                    <constraint firstItem="59X-NB-hBr" firstAttribute="top" secondItem="ddo-1W-hVE" secondAttribute="top" id="KRe-Y2-q6o"/>
                                     <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="ddo-1W-hVE" secondAttribute="top" constant="31" id="Nij-ia-gWF"/>
+                                    <constraint firstAttribute="bottom" secondItem="iC3-Q6-lwP" secondAttribute="bottom" id="QHJ-yZ-PVd"/>
                                     <constraint firstItem="cPP-Pq-1yd" firstAttribute="top" secondItem="ddo-1W-hVE" secondAttribute="top" id="TlA-sw-XeS"/>
+                                    <constraint firstAttribute="bottom" secondItem="cPP-Pq-1yd" secondAttribute="bottom" id="URQ-SC-UdN"/>
                                     <constraint firstAttribute="bottom" secondItem="cPP-Pq-1yd" secondAttribute="bottom" id="oJU-nf-UlJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="1bf-Ra-lvS" secondAttribute="bottom" id="utF-7i-2t3"/>
+                                    <constraint firstItem="iC3-Q6-lwP" firstAttribute="top" secondItem="ddo-1W-hVE" secondAttribute="top" id="ylY-43-ugC"/>
                                 </constraints>
                             </view>
                         </subviews>
