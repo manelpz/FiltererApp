@@ -29,12 +29,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
         let image = UIImage(named: "sample")!
-        
         var myRGBA = RGBAImage(image: image)
-        
         let avgRed = 83
         let avgBlue = 98
         let avgGreen = 98
@@ -59,10 +55,7 @@ class ViewController: UIViewController {
         }
     
     filteredImage = myRGBA!.toUIImage()
-       
         
     }
 
-
 }
-
