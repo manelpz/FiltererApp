@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         var myRGBA = RGBAImage(image: image)
         let avgRed = 83
         let avgBlue = 98
-        let avgGreen = 98
+        //let avgGreen = 98
     
         for y in 0..<myRGBA!.height{
             for x in 0..<myRGBA!.width{
