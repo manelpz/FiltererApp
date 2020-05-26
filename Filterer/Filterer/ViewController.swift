@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         }
     }
     
-    /*override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         let image = UIImage(named: "sample")!
         var myRGBA = RGBAImage(image: image)
@@ -56,5 +56,5 @@ class ViewController: UIViewController {
     
     filteredImage = myRGBA!.toUIImage()
     
-    }*/
+    }
 }
