@@ -39,6 +39,7 @@
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="88"/>
                                                 <state key="normal" title="Filter"/>
                                                 <connections>
+                                                    <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxt-Pr-KFS"/>
                                                     <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhl-s5-arA"/>
                                                 </connections>
                                             </button>

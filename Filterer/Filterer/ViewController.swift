@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     
     @IBOutlet var filterButton: UIButton!
     
+    @IBAction func onFilter(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /*let image = UIImage(named: "sample")!
