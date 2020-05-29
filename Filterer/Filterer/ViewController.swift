@@ -12,13 +12,16 @@ class ViewController: UIViewController {
 
     var filteredImage: UIImage?
     
- 
+    @IBOutlet var secundaryMenu: UIView!
+    
+    @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
     
+    @IBOutlet var filterButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = UIImage(named: "sample")!
+        /*let image = UIImage(named: "sample")!
         var myRGBA = RGBAImage(image: image)
         let avgRed = 83
         let avgBlue = 98
@@ -44,6 +47,6 @@ class ViewController: UIViewController {
         }
     
     filteredImage = myRGBA!.toUIImage()
-    
+    */
     }
 }
