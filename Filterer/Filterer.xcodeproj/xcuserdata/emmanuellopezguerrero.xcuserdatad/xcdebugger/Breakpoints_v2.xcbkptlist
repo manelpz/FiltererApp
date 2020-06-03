@@ -10,13 +10,168 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "612156262.299027"
+            timestampString = "612852444.253469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Filterer.ViewController"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/ViewController.swift"
+                  timestampString = "612851484.139215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Filterer.ViewController"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/ViewController.swift"
+                  timestampString = "612851484.144015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Filterer.ViewController&gt;"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/ViewController.swift"
+                  timestampString = "612851484.14748"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Filterer.ViewController&gt;"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/ViewController.swift"
+                  timestampString = "612851484.1546299"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "137">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.ViewController.__deallocating_deinit"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/ViewController.swift"
+                  timestampString = "612851484.157896"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Filterer/AppDelegate.swift"
+            timestampString = "612852444.254162"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.AppDelegate.__allocating_init() -&gt; Filterer.AppDelegate"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/AppDelegate.swift"
+                  timestampString = "612425535.589089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.AppDelegate.init() -&gt; Filterer.AppDelegate"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/AppDelegate.swift"
+                  timestampString = "612425535.592129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Filterer.AppDelegate.__deallocating_deinit"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/AppDelegate.swift"
+                  timestampString = "612425535.59562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Filterer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/GitHub/Filterer_Swift_University-of-Toronto/Filterer/Filterer/AppDelegate.swift"
+                  timestampString = "612425535.6008331"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

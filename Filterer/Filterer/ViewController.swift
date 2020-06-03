@@ -16,8 +16,14 @@ class ViewController: UIViewController {
     
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
-    
+    /*filterButton
+     photoButton
+     compareButton
+     shareButton*/
     @IBOutlet var filterButton: UIButton!
+
+    
+    
     
     @IBAction func onFilter(_ sender: Any) {
         

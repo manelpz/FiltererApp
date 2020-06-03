@@ -28,41 +28,27 @@
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-lf-0aR">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-Pq-1yd">
-                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="88"/>
-                                                <state key="normal" title="New Photo"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbA-Ps-X25"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
-                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="88"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="88"/>
                                                 <state key="normal" title="Filter"/>
                                                 <connections>
                                                     <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxt-Pr-KFS"/>
                                                     <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhl-s5-arA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59X-NB-hBr">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7o-wB-QkT">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="88"/>
+                                                <state key="normal" title="New Photo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD2-Y9-y9w">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="88"/>
                                                 <state key="normal" title="Compare"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNH-WP-VOE"/>
-                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-Q6-lwP">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-l4-o2c">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="88"/>
                                                 <state key="normal" title="Share"/>
-                                                <connections>
-                                                    <action selector="onImageToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AjU-QP-wHG"/>
-                                                </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="1bf-Ra-lvS" firstAttribute="width" secondItem="59X-NB-hBr" secondAttribute="width" id="bfC-cJ-XDO"/>
-                                            <constraint firstItem="59X-NB-hBr" firstAttribute="width" secondItem="iC3-Q6-lwP" secondAttribute="width" id="ji6-TT-Fl2"/>
-                                            <constraint firstItem="cPP-Pq-1yd" firstAttribute="width" secondItem="1bf-Ra-lvS" secondAttribute="width" id="wP9-zt-9UU"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,7 +80,6 @@
                     <connections>
                         <outlet property="buttonMenu" destination="ddo-1W-hVE" id="0tn-OS-F6l"/>
                         <outlet property="filterButton" destination="1bf-Ra-lvS" id="Fx7-c0-rey"/>
-                        <outlet property="imageToggle" destination="cPP-Pq-1yd" id="n1v-iN-EKc"/>
                         <outlet property="imageView" destination="LiR-ZS-27d" id="Jqs-Iz-82L"/>
                         <outlet property="secundaryMenu" destination="1Ie-tk-GE9" id="81K-U9-cpD"/>
                     </connections>
