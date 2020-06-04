@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func onFilter(_ sender: Any) {
-        
+      view.addSubview(secundaryMenu)
     }
     
     override func viewDidLoad() {
