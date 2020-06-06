@@ -27,11 +27,13 @@ class ViewController: UIViewController {
     
     @IBAction func onFilter(_ sender: Any) {
       view.addSubview(secundaryMenu)
+        
+        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
       let bottomConstraint = secundaryMenu.bottomAnchor.constraint(equalTo: buttonMenu.topAnchor)
         let leftConstraint = secundaryMenu.leftAnchor.constraint(equalTo: view.leftAnchor)
         let rightConstraint = secundaryMenu.rightAnchor.constraint(equalTo: view.rightAnchor)
         let heightConstraint =  secundaryMenu.heightAnchor.constraint(equalToConstant: 44)
-        NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint])
+        NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint, heightConstraint])
     
         view.layoutIfNeeded()
     }
