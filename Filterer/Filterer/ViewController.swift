@@ -25,21 +25,38 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func onFilter(_ sender: Any) {
-      view.addSubview(secundaryMenu)
-        
-        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
-      let bottomConstraint = secundaryMenu.bottomAnchor.constraint(equalTo: buttonMenu.topAnchor)
+    @IBAction func onFilter(_ sender: UIButton) {
+        if (sender.isSelected){
+            hiddenMenu()
+            sender.isSelected = false
+        }else{
+            showSecondaryMenu()
+            sender.isSelected = true
+        }
+    
+    }
+    
+    func hiddenMenu(){
+        secundaryMenu.removeFromSuperview()
+    }
+    
+    func showSecondaryMenu(){
+        view.addSubview(secundaryMenu)
+        let bottomConstraint = secundaryMenu.bottomAnchor.constraint(equalTo: buttonMenu.topAnchor)
         let leftConstraint = secundaryMenu.leftAnchor.constraint(equalTo: view.leftAnchor)
         let rightConstraint = secundaryMenu.rightAnchor.constraint(equalTo: view.rightAnchor)
         let heightConstraint =  secundaryMenu.heightAnchor.constraint(equalToConstant: 44)
         NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint, heightConstraint])
-    
+        
         view.layoutIfNeeded()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
+        
+        secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         /*let image = UIImage(named: "sample")!
         var myRGBA = RGBAImage(image: image)
         let avgRed = 83
