@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let leftConstraint = secundaryMenu.leftAnchor.constraint(equalTo: view.leftAnchor)
         let rightConstraint = secundaryMenu.rightAnchor.constraint(equalTo: view.rightAnchor)
         let heightConstraint =  secundaryMenu.heightAnchor.constraint(equalToConstant: 44)
-        NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint, heightConstraint])
+        NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint])
     
         view.layoutIfNeeded()
     }
