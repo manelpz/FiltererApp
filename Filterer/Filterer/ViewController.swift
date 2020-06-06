@@ -37,7 +37,13 @@ class ViewController: UIViewController {
     }
     
     func hiddenMenu(){
-        secundaryMenu.removeFromSuperview()
+        UIView.animate(withDuration: 0.4, animations: {
+            self.secundaryMenu.alpha = 1.0
+        }){completed in
+            if completed == true{
+            self.secundaryMenu.removeFromSuperview()
+            }
+        }
     }
     
     func showSecondaryMenu(){
@@ -49,6 +55,12 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint, heightConstraint])
         
         view.layoutIfNeeded()
+        
+        self.secundaryMenu.alpha = 0
+        
+        UIView.animate(withDuration: 0.4){
+            self.secundaryMenu.alpha = 1.0
+        }
     }
     
     override func viewDidLoad() {
