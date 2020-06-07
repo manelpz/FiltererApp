@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     var filteredImage: UIImage?
     
@@ -22,9 +22,6 @@ class ViewController: UIViewController {
      shareButton*/
     @IBOutlet var filterButton: UIButton!
 
-    
-    
-    
     @IBAction func onFilter(_ sender: UIButton) {
         if (sender.isSelected){
             hiddenMenu()
@@ -33,7 +30,50 @@ class ViewController: UIViewController {
             showSecondaryMenu()
             sender.isSelected = true
         }
+    }
     
+    @IBAction func onNewPhoto(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "New photo", message: nil, preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title:"Camera", style: .default, handler: {action in
+            self.showCamera()
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Album", style: .default, handler: {action in
+            self.showAlbum()
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func showCamera(){
+        let cameraPicker = UIImagePickerController()
+        cameraPicker.delegate = self
+        cameraPicker.sourceType = .camera
+        
+        present(cameraPicker, animated: true, completion: nil)
+    }
+    
+    func showAlbum(){
+        let cameraPicker = UIImagePickerController()
+        cameraPicker.delegate = self
+        cameraPicker.sourceType = .photoLibrary
+        
+        present(cameraPicker, animated: true, completion: nil)
+    }
+    
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+        dismiss(animated: true, completion: nil)
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        imageView.image = image
+        }
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController){
+        dismiss(animated: true, completion: nil)
     }
     
     func hiddenMenu(){
