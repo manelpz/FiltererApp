@@ -103,6 +103,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     }
     
+    
+    
+    /*share*/
+    
+    @IBAction func onShare(_ sender: AnyObject) {
+            let activityController = UIActivityViewController(activityItems: [imageView.image!], applicationActivities: nil)
+    present(activityController, animated: true, completion: nil)
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
