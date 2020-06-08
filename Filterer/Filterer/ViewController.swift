@@ -11,15 +11,9 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     var filteredImage: UIImage?
-    
     @IBOutlet var secundaryMenu: UIView!
-    
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
-    /*filterButton
-     photoButton
-     compareButton
-     shareButton*/
     @IBOutlet var filterButton: UIButton!
 
     @IBAction func onFilter(_ sender: UIButton) {
@@ -63,7 +57,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         
         present(cameraPicker, animated: true, completion: nil)
     }
-    
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         dismiss(animated: true, completion: nil)
@@ -103,17 +96,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     }
     
-    
-    
     /*share*/
-    
     @IBAction func onShare(_ sender: AnyObject) {
-            let activityController = UIActivityViewController(activityItems: [imageView.image!], applicationActivities: nil)
+            let activityController = UIActivityViewController(activityItems:["Check out my first app", imageView.image!], applicationActivities: nil)
     present(activityController, animated: true, completion: nil)
-        
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -121,7 +108,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
         
         secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
-        /*let image = UIImage(named: "sample")!
+        let image = UIImage(named: "sample")!
         var myRGBA = RGBAImage(image: image)
         let avgRed = 83
         let avgBlue = 98
@@ -147,6 +134,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     
     filteredImage = myRGBA!.toUIImage()
-    */
+    
+        
     }
 }
