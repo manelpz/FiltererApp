@@ -105,7 +105,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
+        /*secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
         
         secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         let image = UIImage(named: "sample")!
