@@ -65,7 +65,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     }
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController){
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
         dismiss(animated: true, completion: nil)
     }
     
@@ -105,10 +105,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
+        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
         
         secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
-        let image = UIImage(named: "sample")!
+        /*let image = UIImage(named: "sample")!
         var myRGBA = RGBAImage(image: image)
         let avgRed = 83
         let avgBlue = 98
