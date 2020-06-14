@@ -11,13 +11,16 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    
+    var OriginalImage: UIImage?
     var filteredImage: UIImage?
     @IBOutlet var secundaryMenu: UIView!
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var filterButton: UIButton!
-
+    @IBOutlet var compareButton: UIButton!
+    @IBOutlet var OriginalImageLabel: UILabel!
+    
+    
     @IBAction func onFilter(_ sender: UIButton) {
         if (sender.isSelected){
             hiddenMenu()
@@ -98,9 +101,103 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     }
     
+    
+    @objc func tapGestures(sender: UILongPressGestureRecognizer) {
+
+        if sender.state == .began{
+                imageView.image = OriginalImage
+                OriginalImageLabel.isHidden = false
+        }
+        
+        if sender.state == .ended{
+                imageView.image = filteredImage
+                OriginalImageLabel.isHidden = true
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imageView.isUserInteractionEnabled = true
+        OriginalImageLabel.isHidden = true
+        let tapGestures = UILongPressGestureRecognizer(target: self, action:  #selector(self.tapGestures))
+        imageView.addGestureRecognizer(tapGestures)
+        
+        compareButton.isEnabled = false
+        
+        OriginalImage = imageView.image
+        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
+        secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        
+    }
+    
+    /*Compare button*/
+    @IBAction func onCompare(_ sender: UIButton) {
+       
+        if (sender.isSelected){
+            imageView.image = OriginalImage
+            sender.isSelected = false
+        }else{
+            imageView.image = filteredImage
+            sender.isSelected = true
+        }
+        
+    }
+    
+    /*SecondaryPurpleFilter*/
+    @IBAction func onSecondaryPurpleFilter(_ sender: UIButton) {
+        let images = imageView.image
+        let myRGBA = RGBAImage(image: images!)
+        let PhotoFilter = Photo()
+        let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
+        
+       
+            filteredImage = PhotoFilter.FilterImageDark(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+        
+         imageView.image = filteredImage
+        compareButton.isEnabled = true
+    }
+    
+    
+    /*SecondaryYellowFilter*/
+    @IBAction func onSecondaryYellowFilter(_ sender: UIButton) {
+        let images = imageView.image
+        let myRGBA = RGBAImage(image: images!)
+        let PhotoFilter = Photo()
+        let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
+        
+        filteredImage = PhotoFilter.FilterImageBright(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+        
+        imageView.image = filteredImage
+compareButton.isEnabled = true
+    }
+    
+    
+    /*SecondaryBlueFilter*/
+    @IBAction func onSecondaryBlueFilter(_ sender: UIButton) {
+        let images = imageView.image
+        let myRGBA = RGBAImage(image: images!)
+        let PhotoFilter = Photo()
+        let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
+        
+        filteredImage = PhotoFilter.FilterImageTemperatureCold(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+        
+        imageView.image = filteredImage
+        compareButton.isEnabled = true
+    }
+    
+    
     /*SecondaryGreenFilter*/
     @IBAction func onSecondaryGreenFilter(_ sender: UIButton) {
+        let images = imageView.image
+        let myRGBA = RGBAImage(image: images!)
+        let PhotoFilter = Photo()
+        let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
         
+        filteredImage = PhotoFilter.FilterImageTemperatureHot(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+        
+        imageView.image = filteredImage
+compareButton.isEnabled = true
     }
     
     
@@ -112,7 +209,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         let PhotoFilter = Photo()
         let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
         
-        imageView.image = PhotoFilter.FilterImageContrast(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+        filteredImage = PhotoFilter.FilterImageContrast(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+        
+        imageView.image = filteredImage
+        compareButton.isEnabled = true
         //sender.isSelected = true
     }
     
@@ -123,14 +223,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     present(activityController, animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
-        
-        secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
-      
-    }
+
 }
 
 

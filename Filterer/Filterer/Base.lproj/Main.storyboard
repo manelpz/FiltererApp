@@ -45,6 +45,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD2-Y9-y9w">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="88"/>
                                                 <state key="normal" title="Compare"/>
+                                                <connections>
+                                                    <action selector="onCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4U-z5-tLF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-l4-o2c">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="88"/>
@@ -64,6 +67,14 @@
                                     <constraint firstAttribute="trailing" secondItem="Ihi-lf-0aR" secondAttribute="trailing" id="k9G-8n-Xg4"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Original" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWv-KE-evj">
+                                <rect key="frame" x="186" y="114" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -83,7 +94,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="OriginalImageLabel" destination="BWv-KE-evj" id="BtY-sk-h2o"/>
                         <outlet property="buttonMenu" destination="ddo-1W-hVE" id="0tn-OS-F6l"/>
+                        <outlet property="compareButton" destination="tD2-Y9-y9w" id="qo6-Hg-fVa"/>
                         <outlet property="filterButton" destination="1bf-Ra-lvS" id="Fx7-c0-rey"/>
                         <outlet property="imageView" destination="LiR-ZS-27d" id="Jqs-Iz-82L"/>
                         <outlet property="secundaryMenu" destination="1Ie-tk-GE9" id="81K-U9-cpD"/>
@@ -114,14 +127,23 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnC-Po-gcu">
                                     <rect key="frame" x="135" y="0.0" width="67" height="100"/>
                                     <state key="normal" title="Blue"/>
+                                    <connections>
+                                        <action selector="onSecondaryBlueFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7q-iQ-ncO"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmv-oL-efw">
                                     <rect key="frame" x="202" y="0.0" width="67.5" height="100"/>
-                                    <state key="normal" title="Yellow"/>
+                                    <state key="normal" title="Bright"/>
+                                    <connections>
+                                        <action selector="onSecondaryYellowFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5g-ew-riw"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3E-BM-zfF">
                                     <rect key="frame" x="269.5" y="0.0" width="67.5" height="100"/>
-                                    <state key="normal" title="Purple"/>
+                                    <state key="normal" title="Dark"/>
+                                    <connections>
+                                        <action selector="onSecondaryPurpleFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngx-Qn-oUf"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
