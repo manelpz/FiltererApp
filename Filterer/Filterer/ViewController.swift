@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var imageViewfiltered: UIImageView!
+    @IBOutlet var EditButton: UIButton!
     
     @IBOutlet var filterButton: UIButton!
     @IBOutlet var compareButton: UIButton!
@@ -26,8 +27,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBAction func onFilter(_ sender: UIButton) {
         if (sender.isSelected){
             hiddenMenu()
+            EditButton.isEnabled = false
             sender.isSelected = false
         }else{
+            EditButton.isEnabled = true
             showSecondaryMenu()
             sender.isSelected = true
         }
@@ -137,6 +140,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         let tapGestures = UILongPressGestureRecognizer(target: self, action:  #selector(self.tapGestures))
         imageView.addGestureRecognizer(tapGestures)
         compareButton.isEnabled = false
+        EditButton.isEnabled = false
         OriginalImage = imageView.image
         secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
         secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)

@@ -40,28 +40,32 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
-                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="88"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="88"/>
                                                 <state key="normal" title="Filter"/>
                                                 <connections>
                                                     <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxt-Pr-KFS"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-AJ-TC2">
+                                                <rect key="frame" x="83" y="0.0" width="82.5" height="88"/>
+                                                <state key="normal" title="Edit"/>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7o-wB-QkT">
-                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="88"/>
+                                                <rect key="frame" x="165.5" y="0.0" width="83" height="88"/>
                                                 <state key="normal" title="New Photo"/>
                                                 <connections>
                                                     <action selector="onNewPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyO-8L-uzm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD2-Y9-y9w">
-                                                <rect key="frame" x="207" y="0.0" width="103.5" height="88"/>
+                                                <rect key="frame" x="248.5" y="0.0" width="82.5" height="88"/>
                                                 <state key="normal" title="Compare"/>
                                                 <connections>
                                                     <action selector="onCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4U-z5-tLF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-l4-o2c">
-                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="88"/>
+                                                <rect key="frame" x="331" y="0.0" width="83" height="88"/>
                                                 <state key="normal" title="Share"/>
                                                 <connections>
                                                     <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8Q-t7-1Qa"/>
@@ -104,6 +108,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="EditButton" destination="4Yk-AJ-TC2" id="onv-4m-XP9"/>
                         <outlet property="OriginalImageLabel" destination="BWv-KE-evj" id="BtY-sk-h2o"/>
                         <outlet property="buttonMenu" destination="ddo-1W-hVE" id="0tn-OS-F6l"/>
                         <outlet property="compareButton" destination="tD2-Y9-y9w" id="qo6-Hg-fVa"/>
