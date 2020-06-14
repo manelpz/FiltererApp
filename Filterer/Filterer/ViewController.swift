@@ -16,6 +16,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var secundaryMenu: UIView!
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageViewfiltered: UIImageView!
+    
     @IBOutlet var filterButton: UIButton!
     @IBOutlet var compareButton: UIButton!
     @IBOutlet var OriginalImageLabel: UILabel!
@@ -83,7 +85,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             }
         }
     }
-    
+
+    func showUIViewFiltered(){
+        UIView.animate(withDuration: 1){
+            self.imageView.alpha = 0
+            self.imageViewfiltered.alpha = 1
+        }
+    }
+    func hiddenUIViewFiltered(){
+        UIView.animate(withDuration: 1){
+            self.imageView.alpha = 1
+            self.imageViewfiltered.alpha = 0
+        }
+    }
     func showSecondaryMenu(){
         view.addSubview(secundaryMenu)
         let bottomConstraint = secundaryMenu.bottomAnchor.constraint(equalTo: buttonMenu.topAnchor)
@@ -103,12 +117,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     
     
     @objc func tapGestures(sender: UILongPressGestureRecognizer) {
-
         if sender.state == .began{
                 imageView.image = OriginalImage
                 OriginalImageLabel.isHidden = false
         }
-        
         if sender.state == .ended{
                 imageView.image = filteredImage
                 OriginalImageLabel.isHidden = true
@@ -117,14 +129,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        imageViewfiltered.alpha = 0
         imageView.isUserInteractionEnabled = true
+        imageViewfiltered.isUserInteractionEnabled = true
         OriginalImageLabel.isHidden = true
+        
         let tapGestures = UILongPressGestureRecognizer(target: self, action:  #selector(self.tapGestures))
         imageView.addGestureRecognizer(tapGestures)
-        
         compareButton.isEnabled = false
-        
         OriginalImage = imageView.image
         secundaryMenu.translatesAutoresizingMaskIntoConstraints = false
         secundaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
@@ -135,10 +147,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBAction func onCompare(_ sender: UIButton) {
        
         if (sender.isSelected){
+            showUIViewFiltered()
             imageView.image = OriginalImage
             sender.isSelected = false
         }else{
-            imageView.image = filteredImage
+            hiddenUIViewFiltered()
+            imageViewfiltered.image = filteredImage
             sender.isSelected = true
         }
         
