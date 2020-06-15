@@ -49,6 +49,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-AJ-TC2">
                                                 <rect key="frame" x="83" y="0.0" width="82.5" height="88"/>
                                                 <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3KP-aq-Pi6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7o-wB-QkT">
                                                 <rect key="frame" x="165.5" y="0.0" width="83" height="88"/>
@@ -113,12 +116,26 @@
                         <outlet property="buttonMenu" destination="ddo-1W-hVE" id="0tn-OS-F6l"/>
                         <outlet property="compareButton" destination="tD2-Y9-y9w" id="qo6-Hg-fVa"/>
                         <outlet property="filterButton" destination="1bf-Ra-lvS" id="Fx7-c0-rey"/>
+                        <outlet property="filterSlider" destination="J3l-oV-L0C" id="LIR-kI-53K"/>
                         <outlet property="imageView" destination="LiR-ZS-27d" id="Jqs-Iz-82L"/>
                         <outlet property="imageViewfiltered" destination="X3x-Cs-BKy" id="KLs-XB-4AI"/>
                         <outlet property="secundaryMenu" destination="1Ie-tk-GE9" id="81K-U9-cpD"/>
+                        <outlet property="sliderMenu" destination="SZR-du-2HL" id="YML-v5-QPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="SZR-du-2HL">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="J3l-oV-L0C">
+                            <rect key="frame" x="37" y="44" width="165" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </slider>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="1Zg-jf-ucx"/>
+                </view>
                 <view contentMode="scaleAspectFit" semanticContentAttribute="spatial" id="1Ie-tk-GE9">
                     <rect key="frame" x="0.0" y="0.0" width="391" height="228"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

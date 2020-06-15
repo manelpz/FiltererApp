@@ -14,6 +14,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     var OriginalImage: UIImage?
     var filteredImage: UIImage?
     @IBOutlet var secundaryMenu: UIView!
+    @IBOutlet var sliderMenu: UIView!
+    
+    @IBOutlet var filterSlider: UISlider!
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var imageViewfiltered: UIImageView!
@@ -23,16 +26,57 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var compareButton: UIButton!
     @IBOutlet var OriginalImageLabel: UILabel!
     
-    
     @IBAction func onFilter(_ sender: UIButton) {
         if (sender.isSelected){
             hiddenMenu()
-            EditButton.isEnabled = false
+            //EditButton.isEnabled = false
             sender.isSelected = false
         }else{
-            EditButton.isEnabled = true
+           // EditButton.isEnabled = true
             showSecondaryMenu()
             sender.isSelected = true
+        }
+    }
+    
+    @IBAction func onEdit(_ sender: UIButton) {
+       //view.addSubview(sliderMenu)
+         if (sender.isSelected){
+            hiddenMenu()
+            hiddenSliderMenu()
+            sender.isSelected = false
+        }else{
+            hiddenMenu()
+            showSliderMenu()
+            
+            sender.isSelected = true
+        }
+    }
+    
+    func showSliderMenu(){
+        view.addSubview(sliderMenu)
+        sliderMenu.translatesAutoresizingMaskIntoConstraints = false
+        let bottomConstraint = sliderMenu.bottomAnchor.constraint(equalTo: buttonMenu.topAnchor)
+        let leftConstraint = sliderMenu.leftAnchor.constraint(equalTo: view.leftAnchor)
+        let rightConstraint = sliderMenu.rightAnchor.constraint(equalTo: view.rightAnchor)
+        let heightConstraint =  sliderMenu.heightAnchor.constraint(equalToConstant: 44)
+        NSLayoutConstraint.activate([bottomConstraint, leftConstraint, rightConstraint, heightConstraint])
+        
+        view.layoutIfNeeded()
+        
+        self.sliderMenu.alpha = 0
+        
+        UIView.animate(withDuration: 0.4){
+            self.sliderMenu.alpha = 1.0
+        }
+    }
+    
+    func hiddenSliderMenu(){
+        UIView.animate(withDuration: 0.4, animations: {
+            self.secundaryMenu.alpha = 1.0
+        }){completed in
+            if completed == true{
+        self.sliderMenu.removeFromSuperview()
+            }
         }
     }
     
@@ -90,13 +134,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     }
 
     func showUIViewFiltered(){
-        UIView.animate(withDuration: 1){
+        UIView.animate(withDuration: 0.4){
             self.imageView.alpha = 0
             self.imageViewfiltered.alpha = 1
         }
     }
+    
     func hiddenUIViewFiltered(){
-        UIView.animate(withDuration: 1){
+        UIView.animate(withDuration: 0.4){
             self.imageView.alpha = 1
             self.imageViewfiltered.alpha = 0
         }
@@ -117,7 +162,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             self.secundaryMenu.alpha = 1.0
         }
     }
-    
     
     @objc func tapGestures(sender: UILongPressGestureRecognizer) {
         if sender.state == .began{
@@ -174,6 +218,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         
          imageView.image = filteredImage
         compareButton.isEnabled = true
+        EditButton.isEnabled = true
     }
     
     
@@ -188,6 +233,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         
         imageView.image = filteredImage
 compareButton.isEnabled = true
+        EditButton.isEnabled = true
     }
     
     
@@ -202,6 +248,7 @@ compareButton.isEnabled = true
         
         imageView.image = filteredImage
         compareButton.isEnabled = true
+        EditButton.isEnabled = true
     }
     
     
@@ -216,8 +263,9 @@ compareButton.isEnabled = true
         
         imageView.image = filteredImage
 compareButton.isEnabled = true
+        EditButton.isEnabled = true
     }
-    
+   
     
     /*SecondaryRedFilter*/
     @IBAction func onSecondaryRedFilter(_ sender: UIButton) {
@@ -232,6 +280,7 @@ compareButton.isEnabled = true
         imageView.image = filteredImage
         compareButton.isEnabled = true
         //sender.isSelected = true
+        EditButton.isEnabled = true
     }
     
     
