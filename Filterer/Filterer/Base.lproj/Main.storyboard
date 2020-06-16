@@ -128,12 +128,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="J3l-oV-L0C">
-                            <rect key="frame" x="37" y="44" width="165" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="J3l-oV-L0C">
+                            <rect key="frame" x="-2" y="44" width="244" height="51"/>
+                            <connections>
+                                <action selector="onSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="hCF-ag-RCU"/>
+                            </connections>
                         </slider>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1Zg-jf-ucx" firstAttribute="trailing" secondItem="J3l-oV-L0C" secondAttribute="trailing" id="60H-tC-Sva"/>
+                        <constraint firstItem="1Zg-jf-ucx" firstAttribute="bottom" secondItem="J3l-oV-L0C" secondAttribute="bottom" id="S07-ZZ-ioU"/>
+                        <constraint firstItem="J3l-oV-L0C" firstAttribute="leading" secondItem="1Zg-jf-ucx" secondAttribute="leading" id="kW2-Qw-BMO"/>
+                        <constraint firstItem="J3l-oV-L0C" firstAttribute="top" secondItem="1Zg-jf-ucx" secondAttribute="top" id="rtU-35-B6Y"/>
+                    </constraints>
                     <viewLayoutGuide key="safeArea" id="1Zg-jf-ucx"/>
                 </view>
                 <view contentMode="scaleAspectFit" semanticContentAttribute="spatial" id="1Ie-tk-GE9">
