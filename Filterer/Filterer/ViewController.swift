@@ -11,8 +11,11 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+    var redFlag:Int = 0, blueFlag:Int=0, greenFlag:Int=0, yellowFlag:Int=0, darkFlag:Int=0
     var OriginalImage: UIImage?
     var filteredImage: UIImage?
+    
+
     @IBOutlet var secundaryMenu: UIView!
     @IBOutlet var sliderMenu: UIView!
     
@@ -27,7 +30,92 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var OriginalImageLabel: UILabel!
     
     @IBAction func onSlider(_ sender: UISlider) {
+        let sliderColor:Int = Int(roundf(filterSlider.value))
         filterSlider.value = roundf(filterSlider.value)
+        let images = imageView.image
+        let myRGBA = RGBAImage(image: OriginalImage!)
+        let PhotoFilter = Photo()
+        let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
+        filteredImage = OriginalImage
+        
+        if (redFlag == 1){
+           
+            switch sliderColor {
+            case 1:
+                filteredImage = PhotoFilter.FilterImageContrast(Level: LevelFilter.low, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 2:
+                filteredImage = PhotoFilter.FilterImageContrast(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 3:
+                filteredImage = PhotoFilter.FilterImageContrast(Level: LevelFilter.high, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            default:
+                filteredImage = PhotoFilter.FilterImageContrast(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+            }
+            
+        }
+        if (blueFlag == 1){
+            switch sliderColor {
+            case 1:
+                filteredImage = PhotoFilter.FilterImageTemperatureCold(Level: LevelFilter.low, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 2:
+                filteredImage = PhotoFilter.FilterImageTemperatureCold(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 3:
+                filteredImage = PhotoFilter.FilterImageTemperatureCold(Level: LevelFilter.high, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            default:
+                filteredImage = PhotoFilter.FilterImageTemperatureCold(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+            }
+        }
+        if (greenFlag == 1){
+            switch sliderColor {
+            case 1:
+                filteredImage = PhotoFilter.FilterImageTemperatureHot(Level: LevelFilter.low, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 2:
+                filteredImage = PhotoFilter.FilterImageTemperatureHot(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 3:
+                filteredImage = PhotoFilter.FilterImageTemperatureHot(Level: LevelFilter.high, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            default:
+                filteredImage = PhotoFilter.FilterImageTemperatureHot(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+            }
+        }
+        if (yellowFlag == 1){
+            switch sliderColor {
+            case 1:
+                filteredImage = PhotoFilter.FilterImageBright(Level: LevelFilter.low, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 2:
+                filteredImage = PhotoFilter.FilterImageBright(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 3:
+                filteredImage = PhotoFilter.FilterImageBright(Level: LevelFilter.high, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            default:
+                filteredImage = PhotoFilter.FilterImageBright(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+            }
+        }
+        if (darkFlag == 1){
+            switch sliderColor {
+            case 1:
+                filteredImage = PhotoFilter.FilterImageDark(Level: LevelFilter.low, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 2:
+                filteredImage = PhotoFilter.FilterImageDark(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            case 3:
+                filteredImage = PhotoFilter.FilterImageDark(Level: LevelFilter.high, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            default:
+                filteredImage = PhotoFilter.FilterImageDark(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
+            }
+        }
+        
     }
     
     @IBAction func onFilter(_ sender: UIButton) {
@@ -112,6 +200,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         dismiss(animated: true, completion: nil)
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
         imageView.image = image
+        OriginalImage = image
         }
     }
     
@@ -170,6 +259,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         imageViewfiltered.alpha = 0
         imageView.isUserInteractionEnabled = true
@@ -200,7 +290,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     }
     
-    /*SecondaryPurpleFilter*/
+    /*SecondaryDarkFilter*/
     @IBAction func onSecondaryPurpleFilter(_ sender: UIButton) {
         let images = imageView.image
         let myRGBA = RGBAImage(image: images!)
@@ -212,6 +302,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         imageView.image = filteredImage
         compareButton.isEnabled = true
         EditButton.isEnabled = true
+        darkFlag = 1
     }
     
     
@@ -224,8 +315,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         filteredImage = PhotoFilter.FilterImageBright(Level: LevelFilter.medium, avgColor: ColorDictionary, myRGBA: myRGBA!)
         
         imageView.image = filteredImage
-compareButton.isEnabled = true
+        compareButton.isEnabled = true
         EditButton.isEnabled = true
+        yellowFlag = 1
     }
     
     
@@ -240,6 +332,8 @@ compareButton.isEnabled = true
         imageView.image = filteredImage
         compareButton.isEnabled = true
         EditButton.isEnabled = true
+        blueFlag = 1
+
     }
     
     
@@ -254,6 +348,7 @@ compareButton.isEnabled = true
         imageView.image = filteredImage
         compareButton.isEnabled = true
         EditButton.isEnabled = true
+        greenFlag = 1
     }
     
     /*SecondaryRedFilter*/
@@ -267,6 +362,7 @@ compareButton.isEnabled = true
         imageView.image = filteredImage
         compareButton.isEnabled = true
         EditButton.isEnabled = true
+        redFlag = 1
     }
     
     /*share*/
@@ -303,21 +399,21 @@ class Filters:FilterType {
                 {
                     switch Level.rawValue{
                     case "high":
-                        RedDiff = RedDiff+50
-                        GreenDiff = GreenDiff+50
-                        BlueDiff = BlueDiff+50
+                        RedDiff = RedDiff+15
+                        GreenDiff = GreenDiff+15
+                        BlueDiff = BlueDiff+15
                     case "medium":
-                        RedDiff = RedDiff+40
-                        GreenDiff = GreenDiff+40
-                        BlueDiff = BlueDiff+40
+                        RedDiff = RedDiff+12
+                        GreenDiff = GreenDiff+12
+                        BlueDiff = BlueDiff+12
                     case "low":
-                        RedDiff = RedDiff+30
-                        GreenDiff = GreenDiff+30
-                        BlueDiff = BlueDiff+30
+                        RedDiff = RedDiff+7
+                        GreenDiff = GreenDiff+7
+                        BlueDiff = BlueDiff+7
                     default:
-                        RedDiff = RedDiff+40
-                        GreenDiff = GreenDiff+40
-                        BlueDiff = BlueDiff+40
+                        RedDiff = RedDiff+12
+                        GreenDiff = GreenDiff+12
+                        BlueDiff = BlueDiff+12
                     }
                     
                     pixel.red = UInt8( max(0,min(255,avgRed! + RedDiff)))
@@ -348,21 +444,21 @@ class Filters:FilterType {
                 {
                     switch Level.rawValue{
                     case "high":
-                        RedDiff = RedDiff+1
-                        GreenDiff = GreenDiff+1
-                        BlueDiff = BlueDiff+1
+                        RedDiff = RedDiff-15
+                        GreenDiff = GreenDiff-15
+                        BlueDiff = BlueDiff-15
                     case "medium":
-                        RedDiff = RedDiff/2
-                        GreenDiff = GreenDiff/2
-                        BlueDiff = BlueDiff/2
+                        RedDiff = RedDiff-12
+                        GreenDiff = GreenDiff-12
+                        BlueDiff = BlueDiff-12
                     case "low":
-                        RedDiff = RedDiff+3
-                        GreenDiff = GreenDiff+3
-                        BlueDiff = BlueDiff+3
+                        RedDiff = RedDiff-7
+                        GreenDiff = GreenDiff-7
+                        BlueDiff = BlueDiff-7
                     default:
-                        RedDiff = RedDiff/2
-                        GreenDiff = GreenDiff/2
-                        BlueDiff = BlueDiff/2
+                        RedDiff = RedDiff-12
+                        GreenDiff = GreenDiff-12
+                        BlueDiff = BlueDiff-12
                     }
                     
                     pixel.red = UInt8( max(0,min(255,avgRed! + RedDiff)))
@@ -394,17 +490,17 @@ class Filters:FilterType {
                 {
                     switch Level.rawValue{
                     case "high":
-                        RedDiff = RedDiff+50
-                        GreenDiff = GreenDiff+50
+                        RedDiff = RedDiff+20
+                        GreenDiff = GreenDiff+20
                     case "medium":
-                        RedDiff = RedDiff+40
-                        GreenDiff = GreenDiff+40
+                        RedDiff = RedDiff+15
+                        GreenDiff = GreenDiff+15
                     case "low":
-                        RedDiff = RedDiff+30
-                        GreenDiff = GreenDiff+30
+                        RedDiff = RedDiff+10
+                        GreenDiff = GreenDiff+10
                     default:
-                        RedDiff = RedDiff+40
-                        GreenDiff = GreenDiff+40
+                        RedDiff = RedDiff+10
+                        GreenDiff = GreenDiff+10
                     }
                     
                     pixel.red = UInt8( max(0,min(255,avgRed! + RedDiff)))
@@ -435,17 +531,17 @@ class Filters:FilterType {
                 {
                     switch Level.rawValue{
                     case "high":
-                        RedDiff = RedDiff+30
-                        BlueDiff = BlueDiff+40
-                    case "medium":
                         RedDiff = RedDiff+20
                         BlueDiff = BlueDiff+30
-                    case "low":
+                    case "medium":
                         RedDiff = RedDiff+10
                         BlueDiff = BlueDiff+20
+                    case "low":
+                        RedDiff = RedDiff+5
+                        BlueDiff = BlueDiff+10
                     default:
-                        RedDiff = RedDiff+20
-                        BlueDiff = BlueDiff+30
+                        RedDiff = RedDiff+5
+                        BlueDiff = BlueDiff+10
                     }
                     
                     pixel.red = UInt8( max(0,min(255,avgRed! + RedDiff)))
@@ -473,14 +569,15 @@ class Filters:FilterType {
                 if(redDiff>0)
                 {
                     switch Level.rawValue{
+                    
                     case "high":
-                        redDiff = redDiff*3
+                        redDiff = redDiff+30
                     case "medium":
-                        redDiff = redDiff*2
+                        redDiff = redDiff+20
                     case "low":
-                        redDiff = redDiff*1
+                        redDiff = redDiff+10
                     default:
-                        redDiff = redDiff*2
+                        redDiff = redDiff+10
                     }
                     pixel.red = UInt8( max(0,min(255,avgRed! + redDiff)))
                     myRGBA.pixels[index] = pixel
