@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d">
                                 <rect key="frame" x="0.0" y="44" width="414" height="730"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
@@ -46,9 +46,9 @@
                                                     <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxt-Pr-KFS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-AJ-TC2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-AJ-TC2">
                                                 <rect key="frame" x="83" y="0.0" width="82.5" height="88"/>
-                                                <state key="normal" title="Edit"/>
+                                                <state key="normal" image="edit"/>
                                                 <connections>
                                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3KP-aq-Pi6"/>
                                                 </connections>
@@ -149,38 +149,38 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ulD-Q1-jFi">
-                            <rect key="frame" x="5" y="49" width="380" height="100"/>
+                            <rect key="frame" x="5" y="49" width="380" height="140"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHy-Wn-gF3">
-                                    <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="76" height="140"/>
                                     <state key="normal" image="red"/>
                                     <connections>
                                         <action selector="onSecondaryRedFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyC-XB-Brg"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnC-Po-gcu">
-                                    <rect key="frame" x="76" y="0.0" width="76" height="100"/>
+                                    <rect key="frame" x="76" y="0.0" width="76" height="140"/>
                                     <state key="normal" image="blue"/>
                                     <connections>
                                         <action selector="onSecondaryBlueFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7q-iQ-ncO"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-ak-BAd">
-                                    <rect key="frame" x="152" y="0.0" width="76" height="100"/>
+                                    <rect key="frame" x="152" y="0.0" width="76" height="140"/>
                                     <state key="normal" image="green"/>
                                     <connections>
                                         <action selector="onSecondaryGreenFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iL1-oo-vkI"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmv-oL-efw">
-                                    <rect key="frame" x="228" y="0.0" width="76" height="100"/>
+                                    <rect key="frame" x="228" y="0.0" width="76" height="140"/>
                                     <state key="normal" image="light"/>
                                     <connections>
                                         <action selector="onSecondaryYellowFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5g-ew-riw"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3E-BM-zfF">
-                                    <rect key="frame" x="304" y="0.0" width="76" height="100"/>
+                                    <rect key="frame" x="304" y="0.0" width="76" height="140"/>
                                     <state key="normal" image="dark"/>
                                     <connections>
                                         <action selector="onSecondaryPurpleFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngx-Qn-oUf"/>
@@ -265,9 +265,10 @@
         <image name="Share" width="44" height="44"/>
         <image name="blue" width="100" height="100"/>
         <image name="dark" width="100" height="100"/>
+        <image name="edit" width="30" height="31"/>
         <image name="green" width="100" height="100"/>
+        <image name="landscape" width="1280" height="853"/>
         <image name="light" width="100" height="100"/>
         <image name="red" width="100" height="100"/>
-        <image name="sample" width="75" height="75"/>
     </resources>
 </document>
