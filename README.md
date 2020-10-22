@@ -1,4 +1,4 @@
-# Filterer_Swift_University-of-Toronto
+# FilterApp
 iOS App Development Basics - iOS App Development with Swift Specialization
 
 
