@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, UIScrollViewDelegate {
 
     var redFlag:Int = 0, blueFlag:Int=0, greenFlag:Int=0, yellowFlag:Int=0, darkFlag:Int=0
     var OriginalImage: UIImage?
@@ -245,6 +245,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         UIView.animate(withDuration: 0.4){
             self.secundaryMenu.alpha = 1.0
         }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
     
     @objc func tapGestures(sender: UILongPressGestureRecognizer) {
