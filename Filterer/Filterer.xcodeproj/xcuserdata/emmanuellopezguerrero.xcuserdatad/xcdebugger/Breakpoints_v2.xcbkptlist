@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.332561"
+            timestampString = "625120059.381488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -181,11 +181,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.333753"
+            timestampString = "625120059.383832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "onNewPhoto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -197,11 +197,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.334254"
+            timestampString = "625120059.384527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "onNewPhoto(_:)"
             landmarkType = "7">
             <Locations>
@@ -245,11 +245,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.334692"
+            timestampString = "625120059.385241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
             landmarkName = "tapGestures(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -261,11 +261,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.3353519"
+            timestampString = "625120059.385892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "tapGestures(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -277,11 +277,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.3359801"
+            timestampString = "625120059.386585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "showUIViewFiltered()"
             landmarkType = "7">
          </BreakpointContent>
@@ -293,11 +293,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.336694"
+            timestampString = "625120059.387241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "showUIViewFiltered()"
             landmarkType = "7">
             <Locations>
@@ -341,11 +341,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.337175"
+            timestampString = "625120059.3877929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "onCompare(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -357,11 +357,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.337631"
+            timestampString = "625120059.3884079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
             landmarkName = "onCompare(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -373,11 +373,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.338423"
+            timestampString = "625120059.388958"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "onSlider(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -389,11 +389,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.338946"
+            timestampString = "625120059.389467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "onSlider(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -405,12 +405,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Filterer/ViewController.swift"
-            timestampString = "625028394.339347"
+            timestampString = "625120059.390016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "onSlider(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Filterer/ViewController.swift"
+            timestampString = "625120059.390583"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "onTap(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -30,6 +30,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var compareButton: UIButton!
     @IBOutlet var OriginalImageLabel: UILabel!
     
+    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+    }
+    
     @IBAction func onSlider(_ sender: UISlider) {
         let sliderColor:Int = Int(roundf(filterSlider.value))
         filterSlider.value = roundf(filterSlider.value)
