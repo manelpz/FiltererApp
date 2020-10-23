@@ -15,7 +15,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     var OriginalImage: UIImage?
     var filteredImage: UIImage?
     
-
+    @IBOutlet var zoomTapGestureRecognizer: UITapGestureRecognizer!
+    
     @IBOutlet var secundaryMenu: UIView!
     @IBOutlet var sliderMenu: UIView!
     
