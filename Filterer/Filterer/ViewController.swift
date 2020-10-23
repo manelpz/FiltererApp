@@ -16,21 +16,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     var filteredImage: UIImage?
     
     @IBOutlet var zoomTapGestureRecognizer: UITapGestureRecognizer!
-    
     @IBOutlet var secundaryMenu: UIView!
     @IBOutlet var sliderMenu: UIView!
-    
     @IBOutlet var filterSlider: UISlider!
     @IBOutlet var buttonMenu: UIView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var imageViewfiltered: UIImageView!
     @IBOutlet var EditButton: UIButton!
-    
     @IBOutlet var filterButton: UIButton!
     @IBOutlet var compareButton: UIButton!
     @IBOutlet var OriginalImageLabel: UILabel!
+    @IBOutlet var scrollView: UIScrollView!
     
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+        
+        UIView.animate(withDuration: 0.4) {
+            self.scrollView.zoomScale = 1.5 * self.scrollView.zoomScale
+        }
     }
     
     @IBAction func onSlider(_ sender: UISlider) {
@@ -273,7 +275,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         imageView.isUserInteractionEnabled = true
         imageViewfiltered.isUserInteractionEnabled = true
         OriginalImageLabel.isHidden = true
-        
+        zoomTapGestureRecognizer.numberOfTapsRequired = 2
         let tapGestures = UILongPressGestureRecognizer(target: self, action:  #selector(self.tapGestures))
         imageView.addGestureRecognizer(tapGestures)
         compareButton.isEnabled = false

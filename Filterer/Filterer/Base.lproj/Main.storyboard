@@ -135,6 +135,7 @@
                         <outlet property="filterSlider" destination="J3l-oV-L0C" id="LIR-kI-53K"/>
                         <outlet property="imageView" destination="LiR-ZS-27d" id="Jqs-Iz-82L"/>
                         <outlet property="imageViewfiltered" destination="X3x-Cs-BKy" id="KLs-XB-4AI"/>
+                        <outlet property="scrollView" destination="5GL-Wg-WRL" id="0Mr-BS-qM0"/>
                         <outlet property="secundaryMenu" destination="1Ie-tk-GE9" id="81K-U9-cpD"/>
                         <outlet property="sliderMenu" destination="SZR-du-2HL" id="YML-v5-QPz"/>
                         <outlet property="zoomTapGestureRecognizer" destination="57P-Aa-wNa" id="UzP-vi-F1S"/>
