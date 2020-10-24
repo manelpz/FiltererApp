@@ -10,12 +10,33 @@ import UIKit
 
 class PhotoView: UIImageView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var lastTouchTime: NSDate? = nil
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
     }
-    */
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
 
+    }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        
+        let currentTime = NSDate()
+        
+        if let previousTime = lastTouchTime{
+            if currentTime.timeIntervalSince(previousTime as Date) < 0.5{
+                print("double tap")
+                lastTouchTime = nil
+            }else {
+                lastTouchTime = currentTime
+            }
+        }else{
+            lastTouchTime =  currentTime
+        }
+
+    }
+
+    
 }
