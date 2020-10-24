@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135B07282543C8C000066FB1 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135B07272543C8C000066FB1 /* PhotoView.swift */; };
 		138EBDA3248C250E00578FBB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EBDA2248C250E00578FBB /* TableViewController.swift */; };
 		139A680E2467B4F3008FEB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A680D2467B4F3008FEB71 /* AppDelegate.swift */; };
 		139A68102467B4F3008FEB71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A680F2467B4F3008FEB71 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135B07272543C8C000066FB1 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		138EBDA2248C250E00578FBB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		139A680A2467B4F3008FEB71 /* Filterer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filterer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139A680D2467B4F3008FEB71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				139A680D2467B4F3008FEB71 /* AppDelegate.swift */,
 				139A680F2467B4F3008FEB71 /* ViewController.swift */,
+				135B07272543C8C000066FB1 /* PhotoView.swift */,
 				138EBDA2248C250E00578FBB /* TableViewController.swift */,
 				139A68212467BA3D008FEB71 /* RGBAImage.swift */,
 				139A68112467B4F3008FEB71 /* Main.storyboard */,
@@ -144,6 +147,7 @@
 				139A68102467B4F3008FEB71 /* ViewController.swift in Sources */,
 				139A68222467BA3D008FEB71 /* RGBAImage.swift in Sources */,
 				139A680E2467B4F3008FEB71 /* AppDelegate.swift in Sources */,
+				135B07282543C8C000066FB1 /* PhotoView.swift in Sources */,
 				138EBDA3248C250E00578FBB /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

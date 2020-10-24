@@ -275,7 +275,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         imageView.isUserInteractionEnabled = true
         imageViewfiltered.isUserInteractionEnabled = true
         OriginalImageLabel.isHidden = true
-        zoomTapGestureRecognizer.numberOfTapsRequired = 2
+        //zoomTapGestureRecognizer.numberOfTapsRequired = 2
         let tapGestures = UILongPressGestureRecognizer(target: self, action:  #selector(self.tapGestures))
         imageView.addGestureRecognizer(tapGestures)
         compareButton.isEnabled = false
