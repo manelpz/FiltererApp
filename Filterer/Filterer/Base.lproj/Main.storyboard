@@ -60,39 +60,43 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
-                                                <rect key="frame" x="0.0" y="0.0" width="83" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="Filter"/>
                                                 <connections>
                                                     <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxt-Pr-KFS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-AJ-TC2">
-                                                <rect key="frame" x="83" y="0.0" width="82.5" height="44"/>
+                                                <rect key="frame" x="69" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="edit"/>
                                                 <connections>
                                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3KP-aq-Pi6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7o-wB-QkT">
-                                                <rect key="frame" x="165.5" y="0.0" width="83" height="44"/>
+                                                <rect key="frame" x="138" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="NewPhoto"/>
                                                 <connections>
                                                     <action selector="onNewPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyO-8L-uzm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD2-Y9-y9w">
-                                                <rect key="frame" x="248.5" y="0.0" width="82.5" height="44"/>
+                                                <rect key="frame" x="207" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="Compare"/>
                                                 <connections>
                                                     <action selector="onCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4U-z5-tLF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-l4-o2c">
-                                                <rect key="frame" x="331" y="0.0" width="83" height="44"/>
+                                                <rect key="frame" x="276" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="Share"/>
                                                 <connections>
                                                     <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8Q-t7-1Qa"/>
                                                 </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-w1-5Ql">
+                                                <rect key="frame" x="345" y="0.0" width="69" height="44"/>
+                                                <state key="normal" title="Social"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -137,6 +141,7 @@
                         <outlet property="scrollView" destination="5GL-Wg-WRL" id="0Mr-BS-qM0"/>
                         <outlet property="secundaryMenu" destination="1Ie-tk-GE9" id="81K-U9-cpD"/>
                         <outlet property="sliderMenu" destination="SZR-du-2HL" id="YML-v5-QPz"/>
+                        <segue destination="Kji-wi-pQT" kind="presentation" id="tZv-fJ-I0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -219,7 +224,7 @@
                     <viewLayoutGuide key="safeArea" id="Fyc-Bi-afS"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="50.724637681159422" y="20.758928571428569"/>
+            <point key="canvasLocation" x="29" y="38"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="7dB-be-q6R">
@@ -271,7 +276,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lz8-qG-CCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="8"/>
+            <point key="canvasLocation" x="751" y="21"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nzq-Zi-GU2">
+            <objects>
+                <viewController id="Kji-wi-pQT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Db6-5s-wLq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ihs-hp-OzU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGe-DI-fMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="723"/>
         </scene>
     </scenes>
     <resources>
