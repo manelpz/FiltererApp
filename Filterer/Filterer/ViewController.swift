@@ -28,6 +28,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var OriginalImageLabel: UILabel!
     @IBOutlet var scrollView: UIScrollView!
     
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier = "PresentSocial"
+        {
+            let destination = segue.destination
+        }
+    }*/
+    
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         
         UIView.animate(withDuration: 0.4) {
@@ -642,4 +649,6 @@ enum LevelFilter : String{
     case medium
     case high
 }
+
+
 
