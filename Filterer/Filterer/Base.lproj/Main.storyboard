@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X3x-Cs-BKy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="784"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.29999999999999999" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="5GL-Wg-WRL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d" customClass="PhotoView" customModule="Filterer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="16" height="16"/>
+                                        <rect key="frame" x="0.0" y="40" width="1280" height="853.00000000000023"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <gestureRecognizers/>
                                     </imageView>
@@ -54,51 +54,51 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddo-1W-hVE">
-                                <rect key="frame" x="0.0" y="828" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-lf-0aR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bf-Ra-lvS">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="Filter"/>
                                                 <connections>
                                                     <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxt-Pr-KFS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-AJ-TC2">
-                                                <rect key="frame" x="69" y="0.0" width="69" height="34"/>
+                                                <rect key="frame" x="69" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="edit"/>
                                                 <connections>
                                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3KP-aq-Pi6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7o-wB-QkT">
-                                                <rect key="frame" x="138" y="0.0" width="69" height="34"/>
+                                                <rect key="frame" x="138" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="NewPhoto"/>
                                                 <connections>
                                                     <action selector="onNewPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyO-8L-uzm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD2-Y9-y9w">
-                                                <rect key="frame" x="207" y="0.0" width="69" height="34"/>
+                                                <rect key="frame" x="207" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="Compare"/>
                                                 <connections>
                                                     <action selector="onCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4U-z5-tLF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-l4-o2c">
-                                                <rect key="frame" x="276" y="0.0" width="69" height="34"/>
+                                                <rect key="frame" x="276" y="0.0" width="69" height="44"/>
                                                 <state key="normal" image="Share"/>
                                                 <connections>
                                                     <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8Q-t7-1Qa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-w1-5Ql">
-                                                <rect key="frame" x="345" y="0.0" width="69" height="34"/>
+                                                <rect key="frame" x="345" y="0.0" width="69" height="44"/>
                                                 <state key="normal" title="Social"/>
                                                 <connections>
-                                                    <segue destination="Kji-wi-pQT" kind="presentation" identifier="PresentSocial" id="V6Z-hu-fhr"/>
+                                                    <segue destination="vHH-1l-eLH" kind="presentation" identifier="PresentSocial" id="V6Z-hu-fhr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -290,10 +290,29 @@
                         <color key="backgroundColor" red="0.5164842224702868" green="1" blue="0.85128195196148349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ihs-hp-OzU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qkm-EN-ie5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGe-DI-fMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="723"/>
+            <point key="canvasLocation" x="771.01449275362324" y="722.54464285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wl4-7c-gqb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vHH-1l-eLH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V8S-oa-dQz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kji-wi-pQT" kind="relationship" relationship="rootViewController" id="UJf-wz-qmt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Geg-vB-OEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="723"/>
         </scene>
     </scenes>
     <resources>
