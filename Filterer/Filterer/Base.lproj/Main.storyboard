@@ -325,11 +325,11 @@
             </objects>
             <point key="canvasLocation" x="2439.130434782609" y="722.54464285714278"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="wl4-7c-gqb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vHH-1l-eLH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="U64-xq-DOP"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="U64-xq-DOP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V8S-oa-dQz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -344,6 +344,22 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="722.54464285714278"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Xn0-tH-BNY">
+            <objects>
+                <viewController id="5fb-Oz-n6s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bpl-k0-eKu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Z5F-3M-7j8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HTd-o3-pJr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="511-iD-lL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="1479"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wh4-hH-4RA">
             <objects>
@@ -355,6 +371,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vHH-1l-eLH" kind="relationship" relationship="viewControllers" id="W61-W4-vqp"/>
+                        <segue destination="5fb-Oz-n6s" kind="relationship" relationship="viewControllers" id="WT5-T4-j1Y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qA0-NC-kMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
