@@ -98,7 +98,7 @@
                                                 <rect key="frame" x="345" y="0.0" width="69" height="44"/>
                                                 <state key="normal" title="Social"/>
                                                 <connections>
-                                                    <segue destination="vHH-1l-eLH" kind="presentation" identifier="PresentSocial" id="V6Z-hu-fhr"/>
+                                                    <segue destination="sd8-lF-NAd" kind="presentation" identifier="PresentSocial" id="V6Z-hu-fhr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -302,11 +302,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Social" id="qkm-EN-ie5">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Dfz-dJ-6wc"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="05p-r6-x0k"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGe-DI-fMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771.01449275362324" y="722.54464285714278"/>
+            <point key="canvasLocation" x="1681.1594202898552" y="722.54464285714278"/>
         </scene>
         <!--Detail-->
         <scene sceneID="R5c-1Y-dmj">
@@ -322,12 +323,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuN-Ft-Y8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="723"/>
+            <point key="canvasLocation" x="2439.130434782609" y="722.54464285714278"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="wl4-7c-gqb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vHH-1l-eLH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="U64-xq-DOP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V8S-oa-dQz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -340,7 +342,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Geg-vB-OEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29" y="723"/>
+            <point key="canvasLocation" x="939.13043478260875" y="722.54464285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wh4-hH-4RA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sd8-lF-NAd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bkw-qt-ggj">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vHH-1l-eLH" kind="relationship" relationship="viewControllers" id="W61-W4-vqp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qA0-NC-kMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="722.54464285714278"/>
         </scene>
     </scenes>
     <resources>
