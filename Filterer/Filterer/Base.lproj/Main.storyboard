@@ -280,21 +280,47 @@
             </objects>
             <point key="canvasLocation" x="751" y="21"/>
         </scene>
-        <!--View Controller-->
+        <!--Social-->
         <scene sceneID="nzq-Zi-GU2">
             <objects>
                 <viewController id="Kji-wi-pQT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Db6-5s-wLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6n-Nm-0Vo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="fae-2o-B4G" kind="show" id="vsu-pa-gfK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.5164842224702868" green="1" blue="0.85128195196148349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ihs-hp-OzU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qkm-EN-ie5"/>
+                    <navigationItem key="navigationItem" title="Social" id="qkm-EN-ie5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGe-DI-fMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="771.01449275362324" y="722.54464285714278"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="R5c-1Y-dmj">
+            <objects>
+                <viewController id="fae-2o-B4G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rph-UF-5co">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.82265377707080378" blue="0.76908692827434966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qHN-yd-HAa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="yPX-Iq-9bc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuN-Ft-Y8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1530" y="723"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wl4-7c-gqb">
