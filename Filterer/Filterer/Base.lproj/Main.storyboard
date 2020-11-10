@@ -313,10 +313,12 @@
                     <view key="view" contentMode="scaleToFill" id="Rph-UF-5co">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.82265377707080378" blue="0.76908692827434966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.979051975388601" green="0.8054208055020643" blue="0.75297607637255337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qHN-yd-HAa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="yPX-Iq-9bc"/>
+                    <navigationItem key="navigationItem" title="Detail" id="yPX-Iq-9bc">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="8o1-tM-9Aq"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuN-Ft-Y8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
