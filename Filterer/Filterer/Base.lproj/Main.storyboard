@@ -300,7 +300,9 @@
                         <color key="backgroundColor" red="0.5164842224702868" green="1" blue="0.85128195196148349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ihs-hp-OzU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Social" id="qkm-EN-ie5"/>
+                    <navigationItem key="navigationItem" title="Social" id="qkm-EN-ie5">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Dfz-dJ-6wc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGe-DI-fMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,9 +318,7 @@
                         <color key="backgroundColor" red="0.979051975388601" green="0.8054208055020643" blue="0.75297607637255337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qHN-yd-HAa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="yPX-Iq-9bc">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="8o1-tM-9Aq"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="always" id="yPX-Iq-9bc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuN-Ft-Y8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
