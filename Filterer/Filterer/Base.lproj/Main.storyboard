@@ -344,17 +344,17 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="722.54464285714278"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="Xn0-tH-BNY">
             <objects>
                 <viewController id="5fb-Oz-n6s" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpl-k0-eKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93258372558712266" green="0.82146833792398277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Z5F-3M-7j8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HTd-o3-pJr"/>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="HTd-o3-pJr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="511-iD-lL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
