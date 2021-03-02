@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1352B30B25EECAC50083E435 /* FilterWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1352B30A25EECAC50083E435 /* FilterWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1352B31125EECAC50083E435 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1352B30F25EECAC50083E435 /* Interface.storyboard */; };
+		1352B31325EECAD10083E435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1352B31225EECAD10083E435 /* Assets.xcassets */; };
+		1352B31A25EECAD30083E435 /* FilterWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1352B31925EECAD30083E435 /* FilterWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1352B31F25EECAD30083E435 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1352B31E25EECAD30083E435 /* InterfaceController.swift */; };
+		1352B32125EECAD30083E435 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1352B32025EECAD30083E435 /* ExtensionDelegate.swift */; };
+		1352B32325EECAD40083E435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1352B32225EECAD40083E435 /* Assets.xcassets */; };
 		135B07282543C8C000066FB1 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135B07272543C8C000066FB1 /* PhotoView.swift */; };
 		138EBDA3248C250E00578FBB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EBDA2248C250E00578FBB /* TableViewController.swift */; };
 		139A680E2467B4F3008FEB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A680D2467B4F3008FEB71 /* AppDelegate.swift */; };
@@ -17,7 +24,59 @@
 		139A68222467BA3D008FEB71 /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A68212467BA3D008FEB71 /* RGBAImage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1352B30C25EECAC50083E435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139A68022467B4F3008FEB71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1352B30925EECAC50083E435;
+			remoteInfo = "FilterWatch WatchKit App";
+		};
+		1352B31B25EECAD30083E435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139A68022467B4F3008FEB71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1352B31825EECAD30083E435;
+			remoteInfo = "FilterWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1352B32725EECAD40083E435 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1352B30B25EECAC50083E435 /* FilterWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1352B32A25EECAD40083E435 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1352B31A25EECAD30083E435 /* FilterWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1352B30725EECAC40083E435 /* FilterWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1352B30A25EECAC50083E435 /* FilterWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FilterWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1352B31025EECAC50083E435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1352B31225EECAD10083E435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1352B31425EECAD10083E435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1352B31925EECAD30083E435 /* FilterWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FilterWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1352B31E25EECAD30083E435 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1352B32025EECAD30083E435 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1352B32225EECAD40083E435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1352B32425EECAD40083E435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135B07272543C8C000066FB1 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		138EBDA2248C250E00578FBB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		139A680A2467B4F3008FEB71 /* Filterer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filterer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1352B31625EECAD30083E435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		139A68072467B4F3008FEB71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +107,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1352B30E25EECAC50083E435 /* FilterWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1352B30F25EECAC50083E435 /* Interface.storyboard */,
+				1352B31225EECAD10083E435 /* Assets.xcassets */,
+				1352B31425EECAD10083E435 /* Info.plist */,
+			);
+			path = "FilterWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		1352B31D25EECAD30083E435 /* FilterWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1352B31E25EECAD30083E435 /* InterfaceController.swift */,
+				1352B32025EECAD30083E435 /* ExtensionDelegate.swift */,
+				1352B32225EECAD40083E435 /* Assets.xcassets */,
+				1352B32425EECAD40083E435 /* Info.plist */,
+			);
+			path = "FilterWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
 		139A68012467B4F3008FEB71 = {
 			isa = PBXGroup;
 			children = (
 				139A680C2467B4F3008FEB71 /* Filterer */,
+				1352B30E25EECAC50083E435 /* FilterWatch WatchKit App */,
+				1352B31D25EECAD30083E435 /* FilterWatch WatchKit Extension */,
 				139A680B2467B4F3008FEB71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				139A680A2467B4F3008FEB71 /* Filterer.app */,
+				1352B30725EECAC40083E435 /* FilterWatch.app */,
+				1352B30A25EECAC50083E435 /* FilterWatch WatchKit App.app */,
+				1352B31925EECAD30083E435 /* FilterWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +168,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1352B30625EECAC40083E435 /* FilterWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1352B32F25EECAD40083E435 /* Build configuration list for PBXNativeTarget "FilterWatch" */;
+			buildPhases = (
+				1352B30525EECAC40083E435 /* Resources */,
+				1352B32725EECAD40083E435 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1352B30D25EECAC50083E435 /* PBXTargetDependency */,
+			);
+			name = FilterWatch;
+			productName = FilterWatch;
+			productReference = 1352B30725EECAC40083E435 /* FilterWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		1352B30925EECAC50083E435 /* FilterWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1352B32E25EECAD40083E435 /* Build configuration list for PBXNativeTarget "FilterWatch WatchKit App" */;
+			buildPhases = (
+				1352B30825EECAC50083E435 /* Resources */,
+				1352B32A25EECAD40083E435 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1352B31C25EECAD30083E435 /* PBXTargetDependency */,
+			);
+			name = "FilterWatch WatchKit App";
+			productName = "FilterWatch WatchKit App";
+			productReference = 1352B30A25EECAC50083E435 /* FilterWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1352B31825EECAD30083E435 /* FilterWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1352B32D25EECAD40083E435 /* Build configuration list for PBXNativeTarget "FilterWatch WatchKit Extension" */;
+			buildPhases = (
+				1352B31525EECAD30083E435 /* Sources */,
+				1352B31625EECAD30083E435 /* Frameworks */,
+				1352B31725EECAD30083E435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FilterWatch WatchKit Extension";
+			productName = "FilterWatch WatchKit Extension";
+			productReference = 1352B31925EECAD30083E435 /* FilterWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		139A68092467B4F3008FEB71 /* Filterer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 139A681C2467B4F7008FEB71 /* Build configuration list for PBXNativeTarget "Filterer" */;
@@ -99,10 +242,19 @@
 		139A68022467B4F3008FEB71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Emmanuel Lopez Guerrero";
 				TargetAttributes = {
+					1352B30625EECAC40083E435 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					1352B30925EECAC50083E435 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					1352B31825EECAD30083E435 = {
+						CreatedOnToolsVersion = 11.7;
+					};
 					139A68092467B4F3008FEB71 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -122,11 +274,38 @@
 			projectRoot = "";
 			targets = (
 				139A68092467B4F3008FEB71 /* Filterer */,
+				1352B30625EECAC40083E435 /* FilterWatch */,
+				1352B30925EECAC50083E435 /* FilterWatch WatchKit App */,
+				1352B31825EECAD30083E435 /* FilterWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1352B30525EECAC40083E435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1352B30825EECAC50083E435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1352B31325EECAD10083E435 /* Assets.xcassets in Resources */,
+				1352B31125EECAC50083E435 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1352B31725EECAD30083E435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1352B32325EECAD40083E435 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		139A68082467B4F3008FEB71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +319,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1352B31525EECAD30083E435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1352B32125EECAD30083E435 /* ExtensionDelegate.swift in Sources */,
+				1352B31F25EECAD30083E435 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		139A68062467B4F3008FEB71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,7 +342,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1352B30D25EECAC50083E435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1352B30925EECAC50083E435 /* FilterWatch WatchKit App */;
+			targetProxy = 1352B30C25EECAC50083E435 /* PBXContainerItemProxy */;
+		};
+		1352B31C25EECAD30083E435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1352B31825EECAD30083E435 /* FilterWatch WatchKit Extension */;
+			targetProxy = 1352B31B25EECAD30083E435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		1352B30F25EECAC50083E435 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1352B31025EECAC50083E435 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		139A68112467B4F3008FEB71 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -174,6 +383,114 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1352B32525EECAD40083E435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9BZ7QN39F;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuellopezguerrero.FilterWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1352B32625EECAD40083E435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9BZ7QN39F;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuellopezguerrero.FilterWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1352B32825EECAD40083E435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9BZ7QN39F;
+				IBSC_MODULE = FilterWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "FilterWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuellopezguerrero.FilterWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		1352B32925EECAD40083E435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9BZ7QN39F;
+				IBSC_MODULE = FilterWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "FilterWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuellopezguerrero.FilterWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		1352B32B25EECAD40083E435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9BZ7QN39F;
+				INFOPLIST_FILE = "FilterWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuellopezguerrero.FilterWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		1352B32C25EECAD40083E435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9BZ7QN39F;
+				INFOPLIST_FILE = "FilterWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuellopezguerrero.FilterWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 		139A681A2467B4F7008FEB71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +646,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1352B32D25EECAD40083E435 /* Build configuration list for PBXNativeTarget "FilterWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1352B32B25EECAD40083E435 /* Debug */,
+				1352B32C25EECAD40083E435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1352B32E25EECAD40083E435 /* Build configuration list for PBXNativeTarget "FilterWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1352B32825EECAD40083E435 /* Debug */,
+				1352B32925EECAD40083E435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1352B32F25EECAD40083E435 /* Build configuration list for PBXNativeTarget "FilterWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1352B32525EECAD40083E435 /* Debug */,
+				1352B32625EECAD40083E435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		139A68052467B4F3008FEB71 /* Build configuration list for PBXProject "Filterer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
