@@ -14,10 +14,24 @@
                         <imageView height="92" alignment="left" id="kPo-9j-maS"/>
                         <separator alignment="left" id="lNi-rh-C0d"/>
                         <button width="1" alignment="left" title="New Photo" id="oHE-KD-SHV"/>
+                        <separator alignment="left" id="b9f-dd-fUs"/>
+                        <group alignment="left" id="01c-K2-Lnd">
+                            <items>
+                                <group width="1" alignment="left" id="yuO-8B-Vyt">
+                                    <items>
+                                        <button width="0.33000000000000002" alignment="left" title="Button" id="CuF-aF-xqy"/>
+                                        <button width="1" alignment="left" title="Button" id="SDu-8a-Ztm"/>
+                                        <button width="1" alignment="left" title="Button" id="xl0-OM-ctq"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="5aM-KO-jjW"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="New" id="F9D-l3-HaQ"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="162" y="144"/>
+            <point key="canvasLocation" x="162" y="155"/>
         </scene>
     </scenes>
 </document>
