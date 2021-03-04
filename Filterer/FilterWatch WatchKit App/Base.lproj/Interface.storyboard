@@ -13,8 +13,10 @@
                     <items>
                         <imageView height="92" alignment="left" id="kPo-9j-maS"/>
                         <separator alignment="left" id="lNi-rh-C0d"/>
-                        <button alignment="left" id="oHE-KD-SHV">
-                            <group key="contentGroup" width="1" alignment="left" id="MHW-Zn-pqj"/>
+                        <button width="1" alignment="left" title="Button" id="gyR-cZ-8fo">
+                            <connections>
+                                <segue destination="ljl-bG-owD" kind="push" id="bX1-HX-8uC"/>
+                            </connections>
                         </button>
                         <separator alignment="left" id="b9f-dd-fUs"/>
                         <group width="136" height="98" alignment="center" layout="vertical" id="01c-K2-Lnd">
@@ -60,12 +62,15 @@
             </objects>
             <point key="canvasLocation" x="162" y="142.5"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Destination-->
         <scene sceneID="Ndq-7z-6C6">
             <objects>
-                <controller id="ljl-bG-owD"/>
+                <controller identifier="Destination" id="ljl-bG-owD"/>
             </objects>
-            <point key="canvasLocation" x="441" y="72"/>
+            <point key="canvasLocation" x="461" y="142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bX1-HX-8uC"/>
+    </inferredMetricsTieBreakers>
 </document>
