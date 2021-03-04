@@ -54,10 +54,18 @@
                     </items>
                     <connections>
                         <outlet property="image" destination="kPo-9j-maS" id="nWI-L0-xlf"/>
+                        <segue destination="ljl-bG-owD" kind="relationship" relationship="nextPage" id="FeJ-oA-AFY"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="162" y="142.5"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Ndq-7z-6C6">
+            <objects>
+                <controller id="ljl-bG-owD"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="72"/>
         </scene>
     </scenes>
 </document>
