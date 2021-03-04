@@ -14,9 +14,6 @@
                         <imageView height="92" alignment="left" id="kPo-9j-maS"/>
                         <separator alignment="left" id="lNi-rh-C0d"/>
                         <button width="1" alignment="left" title="New Photo" id="oHE-KD-SHV"/>
-                        <switch width="1" alignment="left" value="YES" title="Switch" id="Ag0-Ed-pCS"/>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="vib-mf-RKt"/>
-                        <picker height="100" alignment="left" id="TcA-7j-til"/>
                     </items>
                 </controller>
             </objects>
