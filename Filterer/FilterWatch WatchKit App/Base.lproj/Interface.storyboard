@@ -13,7 +13,9 @@
                     <items>
                         <imageView height="92" alignment="left" id="kPo-9j-maS"/>
                         <separator alignment="left" id="lNi-rh-C0d"/>
-                        <button width="1" alignment="left" title="New Photo" id="oHE-KD-SHV"/>
+                        <button alignment="left" id="oHE-KD-SHV">
+                            <group key="contentGroup" width="1" alignment="left" id="MHW-Zn-pqj"/>
+                        </button>
                         <separator alignment="left" id="b9f-dd-fUs"/>
                         <group width="136" height="98" alignment="center" layout="vertical" id="01c-K2-Lnd">
                             <items>
@@ -24,6 +26,9 @@
                                         </button>
                                         <button width="0.33000000000000002" alignment="left" id="SDu-8a-Ztm">
                                             <color key="backgroundColor" red="0.33488750960000002" green="0.67764088779999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onBlueFilter" destination="AgC-eL-Hgc" id="VvB-2D-mcB"/>
+                                            </connections>
                                         </button>
                                         <button width="0.33000000000000002" alignment="left" id="xl0-OM-ctq">
                                             <color key="backgroundColor" red="0.065938930325866729" green="1" blue="0.34714753747418359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,6 +52,9 @@
                         </group>
                         <button width="1" alignment="left" title="New" id="F9D-l3-HaQ"/>
                     </items>
+                    <connections>
+                        <outlet property="image" destination="kPo-9j-maS" id="nWI-L0-xlf"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="162" y="142.5"/>
