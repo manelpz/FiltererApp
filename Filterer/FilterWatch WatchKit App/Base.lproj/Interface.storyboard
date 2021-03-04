@@ -15,9 +15,9 @@
                         <separator alignment="left" id="lNi-rh-C0d"/>
                         <button width="1" alignment="left" title="New Photo" id="oHE-KD-SHV"/>
                         <separator alignment="left" id="b9f-dd-fUs"/>
-                        <group alignment="left" id="01c-K2-Lnd">
+                        <group width="100" alignment="left" layout="vertical" id="01c-K2-Lnd">
                             <items>
-                                <group width="1" alignment="left" id="yuO-8B-Vyt">
+                                <group width="100" alignment="left" id="yuO-8B-Vyt">
                                     <items>
                                         <button width="0.33000000000000002" alignment="left" title="Button" id="CuF-aF-xqy"/>
                                         <button width="1" alignment="left" title="Button" id="SDu-8a-Ztm"/>
