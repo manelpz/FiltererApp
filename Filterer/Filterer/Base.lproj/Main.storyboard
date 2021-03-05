@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-ZS-27d" customClass="PhotoView" customModule="Filterer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="1280" height="853.00000000000023"/>
+                                        <rect key="frame" x="0.0" y="40" width="1280" height="853"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <gestureRecognizers/>
                                     </imageView>
@@ -152,7 +150,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="J3l-oV-L0C">
-                            <rect key="frame" x="-2" y="44" width="244" height="51"/>
+                            <rect key="frame" x="-2" y="44" width="244" height="85"/>
                             <connections>
                                 <action selector="onSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="hCF-ag-RCU"/>
                             </connections>
@@ -172,38 +170,38 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ulD-Q1-jFi">
-                            <rect key="frame" x="5" y="49" width="380" height="140"/>
+                            <rect key="frame" x="5" y="49" width="380" height="174"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHy-Wn-gF3">
-                                    <rect key="frame" x="0.0" y="0.0" width="76" height="140"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="76" height="174"/>
                                     <state key="normal" image="red"/>
                                     <connections>
                                         <action selector="onSecondaryRedFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyC-XB-Brg"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnC-Po-gcu">
-                                    <rect key="frame" x="76" y="0.0" width="76" height="140"/>
+                                    <rect key="frame" x="76" y="0.0" width="76" height="174"/>
                                     <state key="normal" image="blue"/>
                                     <connections>
                                         <action selector="onSecondaryBlueFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7q-iQ-ncO"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-ak-BAd">
-                                    <rect key="frame" x="152" y="0.0" width="76" height="140"/>
+                                    <rect key="frame" x="152" y="0.0" width="76" height="174"/>
                                     <state key="normal" image="green"/>
                                     <connections>
                                         <action selector="onSecondaryGreenFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iL1-oo-vkI"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmv-oL-efw">
-                                    <rect key="frame" x="228" y="0.0" width="76" height="140"/>
+                                    <rect key="frame" x="228" y="0.0" width="76" height="174"/>
                                     <state key="normal" image="light"/>
                                     <connections>
                                         <action selector="onSecondaryYellowFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5g-ew-riw"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3E-BM-zfF">
-                                    <rect key="frame" x="304" y="0.0" width="76" height="140"/>
+                                    <rect key="frame" x="304" y="0.0" width="76" height="174"/>
                                     <state key="normal" image="dark"/>
                                     <connections>
                                         <action selector="onSecondaryPurpleFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngx-Qn-oUf"/>
@@ -241,7 +239,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FilterCell" textLabel="BhS-Nn-ocR" style="IBUITableViewCellStyleDefault" id="InD-Qy-Z0D">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="InD-Qy-Z0D" id="xsL-tl-AUK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -285,7 +283,7 @@
             <objects>
                 <viewController id="Kji-wi-pQT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Db6-5s-wLq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6n-Nm-0Vo">
@@ -314,7 +312,7 @@
             <objects>
                 <viewController id="fae-2o-B4G" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rph-UF-5co">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.979051975388601" green="0.8054208055020643" blue="0.75297607637255337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qHN-yd-HAa"/>
@@ -332,7 +330,7 @@
                     <tabBarItem key="tabBarItem" systemItem="featured" id="U64-xq-DOP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V8S-oa-dQz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -349,7 +347,7 @@
             <objects>
                 <viewController id="5fb-Oz-n6s" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpl-k0-eKu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93258372558712266" green="0.82146833792398277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Z5F-3M-7j8"/>
@@ -366,6 +364,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sd8-lF-NAd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bkw-qt-ggj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

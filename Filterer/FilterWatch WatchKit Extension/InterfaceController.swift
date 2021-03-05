@@ -25,11 +25,57 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
     }
     
+    
+    @IBOutlet var filterSlider: WKInterfaceSlider!
+   
+    @IBAction func onSlide(_ value: Float) {
+        
+        NSLog("hey")
+        print("hey 2")
+        /*
+        let sliderColor:Int = Int(roundf(filterSlider.value))
+        filterSlider.value = roundf(filterSlider.value)
+        let images = imageView.image
+        let myRGBA = RGBAImage(image: OriginalImage!)
+        let PhotoFilter = Photo()
+        let ColorDictionary = PhotoFilter.ReadColors(imageParam: images!)
+        filteredImage = OriginalImage
+        
+        if (1 == 1){
+            switch sliderColor {
+            case 1:
+                filteredImage = PhotoFilter.FilterImageContrast(Level: LevelFilter.low, avgColor: ColorDictionary, myRGBA: myRGBA!)
+                imageView.image = filteredImage
+            }
+        }
+
+        */
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    
+    
     @IBAction func onBlueFilter() {
+        
+        NSLog("hey")
+              print("hey 2")
+        
+        
+        
+        
+        
+        
     }
     
 }

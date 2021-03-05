@@ -58,15 +58,22 @@
         <!--red color-->
         <scene sceneID="Aq7-vd-gQq">
             <objects>
-                <controller identifier="red color" id="OGu-0x-x17">
+                <controller identifier="red color" id="OGu-0x-x17" customClass="InterfaceController" customModule="FilterWatch_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="k1C-xG-FpT">
                             <items>
                                 <label alignment="left" text="Red color" id="Cec-Di-oCA"/>
                             </items>
                         </group>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="85v-Kb-uzZ"/>
+                        <slider width="1" alignment="left" continuous="YES" value="2" minimum="1" maximum="3" steps="3" id="85v-Kb-uzZ">
+                            <connections>
+                                <action selector="onSlide:" destination="OGu-0x-x17" id="mhq-8b-zcu"/>
+                            </connections>
+                        </slider>
                     </items>
+                    <connections>
+                        <outlet property="filterSlider" destination="85v-Kb-uzZ" id="uih-dp-OV0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="146" y="630"/>
