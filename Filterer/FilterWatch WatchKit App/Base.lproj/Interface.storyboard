@@ -41,7 +41,6 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Add New Image" id="F9D-l3-HaQ"/>
                     </items>
                     <connections>
                         <outlet property="image" destination="kPo-9j-maS" id="nWI-L0-xlf"/>
