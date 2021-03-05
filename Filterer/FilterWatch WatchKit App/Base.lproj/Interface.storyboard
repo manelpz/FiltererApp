@@ -13,13 +13,8 @@
                     <items>
                         <imageView height="92" alignment="left" image="landscape-2" id="kPo-9j-maS"/>
                         <separator alignment="left" id="lNi-rh-C0d"/>
-                        <button width="1" alignment="left" title="Button" id="gyR-cZ-8fo">
-                            <connections>
-                                <segue destination="ljl-bG-owD" kind="push" id="bX1-HX-8uC"/>
-                            </connections>
-                        </button>
                         <separator alignment="left" id="b9f-dd-fUs"/>
-                        <group width="136" height="98" alignment="center" layout="vertical" id="01c-K2-Lnd">
+                        <group width="136" height="44" alignment="center" layout="vertical" id="01c-K2-Lnd">
                             <items>
                                 <group width="125" height="44" alignment="center" spacing="4" id="yuO-8B-Vyt">
                                     <items>
@@ -46,14 +41,14 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="New" id="F9D-l3-HaQ"/>
+                        <button width="1" alignment="left" title="Add New Image" id="F9D-l3-HaQ"/>
                     </items>
                     <connections>
                         <outlet property="image" destination="kPo-9j-maS" id="nWI-L0-xlf"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="162" y="142.5"/>
+            <point key="canvasLocation" x="162" y="115"/>
         </scene>
         <!--red color-->
         <scene sceneID="Aq7-vd-gQq">
@@ -70,6 +65,7 @@
                                 <action selector="onSlide:" destination="OGu-0x-x17" id="mhq-8b-zcu"/>
                             </connections>
                         </slider>
+                        <button width="1" alignment="left" title="Ok" id="ftc-uJ-ExS"/>
                     </items>
                     <connections>
                         <outlet property="filterSlider" destination="85v-Kb-uzZ" id="uih-dp-OV0"/>
@@ -88,6 +84,8 @@
                                 <label alignment="left" text="Blue Color" id="noy-Tk-Ixt"/>
                             </items>
                         </group>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="GyQ-a8-neJ"/>
+                        <button width="1" alignment="left" title="Ok" id="SIT-lH-NRQ"/>
                     </items>
                 </controller>
             </objects>
@@ -103,17 +101,12 @@
                                 <label alignment="left" text="Green Color" id="Vi3-SY-5UH"/>
                             </items>
                         </group>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="Kgq-jt-NAO"/>
+                        <button width="1" alignment="left" title="Ok" id="q86-sI-yRj"/>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="595" y="630"/>
-        </scene>
-        <!--Destination-->
-        <scene sceneID="Ndq-7z-6C6">
-            <objects>
-                <controller identifier="Destination" id="ljl-bG-owD"/>
-            </objects>
-            <point key="canvasLocation" x="461" y="142"/>
         </scene>
     </scenes>
     <resources>
