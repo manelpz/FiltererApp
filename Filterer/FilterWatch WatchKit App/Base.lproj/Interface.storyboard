@@ -11,7 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FilterWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView height="92" alignment="left" id="kPo-9j-maS"/>
+                        <imageView height="92" alignment="left" image="landscape-2" id="kPo-9j-maS"/>
                         <separator alignment="left" id="lNi-rh-C0d"/>
                         <button width="1" alignment="left" title="Button" id="gyR-cZ-8fo">
                             <connections>
@@ -25,28 +25,22 @@
                                     <items>
                                         <button width="0.33000000000000002" alignment="left" id="CuF-aF-xqy">
                                             <color key="backgroundColor" red="1" green="0.13234297062054734" blue="0.079816036886337316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="OGu-0x-x17" kind="push" id="PRO-uY-XUB"/>
+                                            </connections>
                                         </button>
                                         <button width="0.33000000000000002" alignment="left" id="SDu-8a-Ztm">
                                             <color key="backgroundColor" red="0.33488750960000002" green="0.67764088779999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="onBlueFilter" destination="AgC-eL-Hgc" id="VvB-2D-mcB"/>
+                                                <segue destination="cpr-cb-EKE" kind="push" id="bsM-5K-3jo"/>
                                             </connections>
                                         </button>
                                         <button width="0.33000000000000002" alignment="left" id="xl0-OM-ctq">
                                             <color key="backgroundColor" red="0.065938930325866729" green="1" blue="0.34714753747418359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="125" height="76" alignment="center" spacing="4" id="vSi-9v-Slz">
-                                    <items>
-                                        <button width="0.33000000000000002" alignment="left" id="2z7-qH-2Y1">
-                                            <color key="backgroundColor" red="1" green="0.1323429706" blue="0.079816036889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </button>
-                                        <button width="0.33000000000000002" alignment="left" id="t8q-uS-4NQ">
-                                            <color key="backgroundColor" red="0.33488750960000002" green="0.67764088779999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </button>
-                                        <button width="0.33000000000000002" alignment="left" id="eq9-mS-CBG">
-                                            <color key="backgroundColor" red="0.065938930330000006" green="1" blue="0.34714753749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="Mv5-f6-pEg" kind="push" id="fGW-E6-h56"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -56,11 +50,40 @@
                     </items>
                     <connections>
                         <outlet property="image" destination="kPo-9j-maS" id="nWI-L0-xlf"/>
-                        <segue destination="ljl-bG-owD" kind="relationship" relationship="nextPage" id="FeJ-oA-AFY"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="162" y="142.5"/>
+        </scene>
+        <!--red color-->
+        <scene sceneID="Aq7-vd-gQq">
+            <objects>
+                <controller identifier="red color" id="OGu-0x-x17">
+                    <items>
+                        <group width="1" alignment="left" id="k1C-xG-FpT">
+                            <items>
+                                <label alignment="left" text="Red color" id="Cec-Di-oCA"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="85v-Kb-uzZ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="146" y="630"/>
+        </scene>
+        <!--blue color-->
+        <scene sceneID="FDN-jO-DhS">
+            <objects>
+                <controller identifier="blue color" id="cpr-cb-EKE"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="630"/>
+        </scene>
+        <!--green color-->
+        <scene sceneID="3No-p3-Lff">
+            <objects>
+                <controller identifier="green color" id="Mv5-f6-pEg"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="630"/>
         </scene>
         <!--Destination-->
         <scene sceneID="Ndq-7z-6C6">
@@ -70,7 +93,7 @@
             <point key="canvasLocation" x="461" y="142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bX1-HX-8uC"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="landscape-2" width="600" height="450"/>
+    </resources>
 </document>
