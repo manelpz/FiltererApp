@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1352B30B25EECAC50083E435 /* FilterWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1352B30A25EECAC50083E435 /* FilterWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1352B31125EECAC50083E435 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1352B30F25EECAC50083E435 /* Interface.storyboard */; };
 		1352B31325EECAD10083E435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1352B31225EECAD10083E435 /* Assets.xcassets */; };
 		1352B31A25EECAD30083E435 /* FilterWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1352B31925EECAD30083E435 /* FilterWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1352B31F25EECAD30083E435 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1352B31E25EECAD30083E435 /* InterfaceController.swift */; };
@@ -21,7 +20,8 @@
 		139A68132467B4F3008FEB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139A68112467B4F3008FEB71 /* Main.storyboard */; };
 		139A68182467B4F7008FEB71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139A68162467B4F7008FEB71 /* LaunchScreen.storyboard */; };
 		139A68222467BA3D008FEB71 /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A68212467BA3D008FEB71 /* RGBAImage.swift */; };
-		13D064AC25F1BF8400F84B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139A68142467B4F7008FEB71 /* Assets.xcassets */; };
+		13D064AF25F1C2E100F84B6E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1352B30F25EECAC50083E435 /* Interface.storyboard */; };
+		13D064B225F1C7A800F84B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139A68142467B4F7008FEB71 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,7 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D064AC25F1BF8400F84B6E /* Assets.xcassets in Resources */,
+				13D064B225F1C7A800F84B6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D064AF25F1C2E100F84B6E /* Interface.storyboard in Resources */,
 				1352B31325EECAD10083E435 /* Assets.xcassets in Resources */,
-				1352B31125EECAC50083E435 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

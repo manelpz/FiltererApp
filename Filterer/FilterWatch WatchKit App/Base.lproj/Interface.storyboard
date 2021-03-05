@@ -74,14 +74,30 @@
         <!--blue color-->
         <scene sceneID="FDN-jO-DhS">
             <objects>
-                <controller identifier="blue color" id="cpr-cb-EKE"/>
+                <controller identifier="blue color" id="cpr-cb-EKE">
+                    <items>
+                        <group width="1" alignment="left" id="lx6-a9-lF0">
+                            <items>
+                                <label alignment="left" text="Blue Color" id="noy-Tk-Ixt"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="370" y="630"/>
         </scene>
         <!--green color-->
         <scene sceneID="3No-p3-Lff">
             <objects>
-                <controller identifier="green color" id="Mv5-f6-pEg"/>
+                <controller identifier="green color" id="Mv5-f6-pEg">
+                    <items>
+                        <group width="1" alignment="left" id="AMv-2L-R44">
+                            <items>
+                                <label alignment="left" text="Green Color" id="Vi3-SY-5UH"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="595" y="630"/>
         </scene>
