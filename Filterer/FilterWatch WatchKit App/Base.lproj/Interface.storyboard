@@ -64,7 +64,11 @@
                                 <action selector="onSlide:" destination="OGu-0x-x17" id="mhq-8b-zcu"/>
                             </connections>
                         </slider>
-                        <button width="1" alignment="left" title="Ok" id="ftc-uJ-ExS"/>
+                        <button width="1" alignment="left" title="Ok" id="ftc-uJ-ExS">
+                            <connections>
+                                <action selector="onClickRed" destination="OGu-0x-x17" id="oTf-lh-N6C"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="filterSlider" destination="85v-Kb-uzZ" id="uih-dp-OV0"/>

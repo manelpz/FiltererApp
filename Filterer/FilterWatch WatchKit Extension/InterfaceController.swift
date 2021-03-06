@@ -28,6 +28,11 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var filterSlider: WKInterfaceSlider!
    
+    
+    @IBAction func onClickRed() {
+         print("hey 3")
+    }
+    
     @IBAction func onSlide(_ value: Float) {
         
         NSLog("hey")
