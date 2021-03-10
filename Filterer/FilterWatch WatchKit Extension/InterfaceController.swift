@@ -37,12 +37,7 @@ class InterfaceController: WKInterfaceController {
         
         NSLog("hey")
         print("hey 2")
-        
-        
-        
-        
-        
-        
+
     }
     
     
