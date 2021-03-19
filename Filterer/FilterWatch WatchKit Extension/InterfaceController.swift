@@ -35,7 +35,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func onSlide(_ value: Float) {
         
-        NSLog("hey")
+        
         print("hey 2")
 
     }
