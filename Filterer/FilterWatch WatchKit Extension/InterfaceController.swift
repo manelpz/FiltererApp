@@ -34,8 +34,6 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func onSlide(_ value: Float) {
-        
-        
         print("hey 2")
 
     }
@@ -48,17 +46,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     
-    
     @IBAction func onBlueFilter() {
         
         NSLog("hey")
               print("hey 2")
-        
-        
-        
-        
-        
-        
+ 
     }
     
 }
