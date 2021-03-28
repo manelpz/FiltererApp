@@ -15,9 +15,6 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
-       
     }
     
     override func willActivate() {
@@ -35,10 +32,8 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func onSlide(_ value: Float) {
         print("hey 2")
-
     }
-    
-    
+        
     
     override func didDeactivate() {
        
@@ -50,7 +45,6 @@ class InterfaceController: WKInterfaceController {
         
         NSLog("hey")
               print("hey 2")
- 
     }
     
 }
