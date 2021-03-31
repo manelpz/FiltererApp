@@ -42,8 +42,6 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func onBlueFilter() {
-        
-        NSLog("hey")
               print("hey 2")
     }
     
